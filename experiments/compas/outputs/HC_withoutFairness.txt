@@ -1,0 +1,2042 @@
+=====Model edges:  [('race_cat', 'age_cat'), ('age_cat', 'priors_count_cat'), ('age_cat', 'juv_other_count_cat'), ('priors_count_cat', 'two_year_recid'), ('priors_count_cat', 'c_days_from_compas_cat'), ('priors_count_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'juv_fel_count_cat'), ('priors_count_cat', 'c_charge_degree'), ('c_days_from_compas_cat', 'days_b_screening_arrest_cat'), ('sex', 'priors_count_cat')] =====
+----Processing edge addition of:  age_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -342.97602320547776
+Delta structure score wihout fairness:  -342.97602320547776
+----Processing edge addition of:  race_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -119.69693240340484
+Delta structure score wihout fairness:  -119.69693240340484
+----Processing edge addition of:  age_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -2.6812887918753177
+Delta structure score wihout fairness:  -2.6812887918753177
+----Processing edge addition of:  juv_fel_count_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -22.827647828203226
+Delta structure score wihout fairness:  -22.827647828203226
+----Processing edge addition of:  c_charge_degree and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -55.61065777977046
+Delta structure score wihout fairness:  -55.61065777977046
+----Processing edge addition of:  juv_other_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -380.41523386957033
+Delta structure score wihout fairness:  -380.41523386957033
+----Processing edge addition of:  age_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  68.25130142156763
+Delta structure score wihout fairness:  68.25130142156763
+----Processing edge addition of:  race_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -42.90257959415612
+Delta structure score wihout fairness:  -42.90257959415612
+----Processing edge addition of:  juv_other_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -46.93110898377165
+Delta structure score wihout fairness:  -46.93110898377165
+----Processing edge addition of:  race_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -52.16331460780202
+Delta structure score wihout fairness:  -52.16331460780202
+----Processing edge addition of:  sex and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -160.92424728790775
+Delta structure score wihout fairness:  -160.92424728790775
+----Processing edge addition of:  c_charge_degree and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  sex and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -15.687088691211216
+Delta structure score wihout fairness:  -15.687088691211216
+----Processing edge addition of:  c_days_from_compas_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -184.04030383680686
+Delta structure score wihout fairness:  -184.04030383680686
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -219.43538546008358
+Delta structure score wihout fairness:  -219.43538546008358
+----Processing edge addition of:  age_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  102.31256610463151
+Delta structure score wihout fairness:  102.31256610463151
+----Processing edge addition of:  juv_misd_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -389.9642433994168
+Delta structure score wihout fairness:  -389.9642433994168
+----Processing edge addition of:  sex and race_cat ----
+Old structure score before fairness:  -3963.825575402475
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  c_days_from_compas_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -389.964243399417
+Delta structure score wihout fairness:  -389.964243399417
+----Processing edge addition of:  juv_fel_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -24.695414937758414
+Delta structure score wihout fairness:  -24.695414937758414
+----Processing edge addition of:  juv_misd_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.26843388967063
+Delta structure score wihout fairness:  -262.26843388967063
+----Processing edge addition of:  juv_other_count_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -13.365678293095243
+Delta structure score wihout fairness:  -13.365678293095243
+----Processing edge addition of:  sex and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score with fairness:  -15.362754419258636
+Delta structure score wihout fairness:  -15.362754419258636
+----Processing edge addition of:  sex and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -14.06989955623385
+Delta structure score wihout fairness:  -14.06989955623385
+----Processing edge addition of:  sex and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -5.4225119970906235
+Delta structure score wihout fairness:  -5.4225119970906235
+----Processing edge addition of:  c_days_from_compas_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -172.73061595592253
+Delta structure score wihout fairness:  -172.73061595592253
+----Processing edge addition of:  two_year_recid and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -172.73061595592208
+Delta structure score wihout fairness:  -172.73061595592208
+----Processing edge addition of:  two_year_recid and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -22.827647828203112
+Delta structure score wihout fairness:  -22.827647828203112
+----Processing edge addition of:  juv_misd_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  50.46465859461682
+Delta structure score wihout fairness:  50.46465859461682
+----Processing edge addition of:  race_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -18.77342153513746
+Delta structure score wihout fairness:  -18.77342153513746
+----Processing edge addition of:  two_year_recid and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -43.826438266614105
+Delta structure score wihout fairness:  -43.826438266614105
+----Processing edge addition of:  juv_other_count_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.937636699625273
+Delta structure score wihout fairness:  10.937636699625273
+----Processing edge addition of:  days_b_screening_arrest_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -103.69283583472998
+Delta structure score wihout fairness:  -103.69283583472998
+----Processing edge addition of:  priors_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -5.921295986128598
+Delta structure score wihout fairness:  -5.921295986128598
+----Processing edge addition of:  juv_fel_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -114.75934125710546
+Delta structure score wihout fairness:  -114.75934125710546
+----Processing edge addition of:  c_days_from_compas_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -153.17705866486494
+Delta structure score wihout fairness:  -153.17705866486494
+----Processing edge addition of:  race_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -138.96013466370368
+Delta structure score wihout fairness:  -138.96013466370368
+----Processing edge addition of:  race_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -17.97330786384589
+Delta structure score wihout fairness:  -17.97330786384589
+----Processing edge addition of:  c_charge_degree and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -94.22781366556546
+Delta structure score wihout fairness:  -94.22781366556546
+----Processing edge addition of:  juv_fel_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  2.1572381443525046
+Delta structure score wihout fairness:  2.1572381443525046
+----Processing edge addition of:  c_charge_degree and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -24.695414937758642
+Delta structure score wihout fairness:  -24.695414937758642
+----Processing edge addition of:  age_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -250.6878174202484
+Delta structure score wihout fairness:  -250.6878174202484
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -98.01503272267121
+Delta structure score wihout fairness:  -98.01503272267121
+----Processing edge addition of:  two_year_recid and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  c_charge_degree and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -22.558782965532146
+Delta structure score wihout fairness:  -22.558782965532146
+----Processing edge addition of:  juv_other_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.90933147999294
+Delta structure score wihout fairness:  -262.90933147999294
+----Processing edge addition of:  race_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -20.679830715864227
+Delta structure score wihout fairness:  -20.679830715864227
+----Processing edge addition of:  race_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -10.03521331178672
+Delta structure score wihout fairness:  -10.03521331178672
+----Processing edge addition of:  sex and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -122.81581003174142
+Delta structure score wihout fairness:  -122.81581003174142
+----Processing edge addition of:  days_b_screening_arrest_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -71.02402921550356
+Delta structure score wihout fairness:  -71.02402921550356
+----Processing edge addition of:  juv_other_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -27.420887592485315
+Delta structure score wihout fairness:  -27.420887592485315
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -86.12966226335129
+Delta structure score wihout fairness:  -86.12966226335129
+----Processing edge addition of:  juv_misd_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -38.67870014765924
+Delta structure score wihout fairness:  -38.67870014765924
+----Processing edge addition of:  juv_other_count_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -160.3564357805808
+Delta structure score wihout fairness:  -160.3564357805808
+----Processing edge addition of:  sex and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -53.26865256997121
+Delta structure score wihout fairness:  -53.26865256997121
+----Processing edge addition of:  c_days_from_compas_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -159.01531899814177
+Delta structure score wihout fairness:  -159.01531899814177
+----Processing edge addition of:  age_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  -8.115717495566969
+Delta structure score wihout fairness:  -8.115717495566969
+----Processing edge addition of:  race_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  priors_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -747.8847514700342
+Delta structure score wihout fairness:  -747.8847514700342
+----Processing edge addition of:  two_year_recid and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -89.31725511729519
+Delta structure score wihout fairness:  -89.31725511729519
+----Processing edge addition of:  juv_misd_count_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score with fairness:  -43.82643826661479
+Delta structure score wihout fairness:  -43.82643826661479
+----Processing edge addition of:  age_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -0.8305509187503048
+Delta structure score wihout fairness:  -0.8305509187503048
+----Processing edge addition of:  two_year_recid and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  24.83848334665049
+Delta structure score wihout fairness:  24.83848334665049
+----Processing edge addition of:  juv_fel_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -184.04030383680674
+Delta structure score wihout fairness:  -184.04030383680674
+----Processing edge addition of:  juv_other_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -49.07798414824492
+Delta structure score wihout fairness:  -49.07798414824492
+----Processing edge addition of:  sex and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -10.725247766842585
+Delta structure score wihout fairness:  -10.725247766842585
+----Processing edge addition of:  juv_fel_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -38.67870014765913
+Delta structure score wihout fairness:  -38.67870014765913
+----Processing edge addition of:  c_charge_degree and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -153.1770586648654
+Delta structure score wihout fairness:  -153.1770586648654
+----Processing edge addition of:  juv_misd_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -55.61065777977092
+Delta structure score wihout fairness:  -55.61065777977092
+----Processing edge removal of:  race_cat and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score:  -74.09325001499292
+Delta structure score wihout fairness:  -74.09325001499292
+----Processing edge removal of:  age_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  -138.0511526568207
+Delta structure score wihout fairness:  -138.0511526568207
+----Processing edge removal of:  age_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score:  -132.0507116292913
+Delta structure score wihout fairness:  -132.0507116292913
+----Processing edge removal of:  priors_count_cat and two_year_recid ----
+Old structure score before fairness:  -3949.3936442546005
+Delta structure score:  -308.17757055117954
+Delta structure score wihout fairness:  -308.17757055117954
+----Processing edge removal of:  priors_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score:  -77.59698001271772
+Delta structure score wihout fairness:  -77.59698001271772
+----Processing edge removal of:  priors_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score:  -184.41133662077914
+Delta structure score wihout fairness:  -184.41133662077914
+----Processing edge removal of:  priors_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score:  -114.80426594550772
+Delta structure score wihout fairness:  -114.80426594550772
+----Processing edge removal of:  priors_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score:  -75.20426665883133
+Delta structure score wihout fairness:  -75.20426665883133
+----Processing edge removal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score:  -3222.103578774046
+Delta structure score wihout fairness:  -3222.103578774046
+----Processing edge removal of:  sex and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  8.073694038161193
+Delta structure score wihout fairness:  8.073694038161193
+----Processing edge reversal of:  race_cat and age_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  9.094947017729282e-13
+----Processing edge reversal of:  age_cat and priors_count_cat ----
+Delta structure score:  22.419743510894477
+Delta structure score wihout fairness:  22.419743510896296
+----Processing edge reversal of:  age_cat and juv_other_count_cat ----
+Delta structure score:  -6.876176440692689
+Delta structure score wihout fairness:  -6.876176440692234
+----Processing edge reversal of:  priors_count_cat and two_year_recid ----
+Delta structure score:  -55.962410315481975
+Delta structure score wihout fairness:  -55.96241031548152
+----Processing edge reversal of:  priors_count_cat and c_days_from_compas_cat ----
+Delta structure score:  -829.9356158874834
+Delta structure score wihout fairness:  -829.9356158874843
+----Processing edge reversal of:  priors_count_cat and juv_misd_count_cat ----
+Delta structure score:  -160.7818883375876
+Delta structure score wihout fairness:  -160.78188833758736
+----Processing edge reversal of:  priors_count_cat and juv_fel_count_cat ----
+Delta structure score:  -95.3452340990807
+Delta structure score wihout fairness:  -95.3452340990815
+----Processing edge reversal of:  priors_count_cat and c_charge_degree ----
+Delta structure score:  -86.4671829285544
+Delta structure score wihout fairness:  -86.46718292855485
+----Processing edge reversal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Delta structure score:  -764.9680863164122
+Delta structure score wihout fairness:  -764.9680863164117
+----Processing edge reversal of:  sex and priors_count_cat ----
+Delta structure score:  43.21584493581395
+Delta structure score wihout fairness:  43.21584493581395
+=====Model edges:  [('race_cat', 'age_cat'), ('age_cat', 'priors_count_cat'), ('age_cat', 'juv_other_count_cat'), ('age_cat', 'two_year_recid'), ('priors_count_cat', 'two_year_recid'), ('priors_count_cat', 'c_days_from_compas_cat'), ('priors_count_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'juv_fel_count_cat'), ('priors_count_cat', 'c_charge_degree'), ('c_days_from_compas_cat', 'days_b_screening_arrest_cat'), ('sex', 'priors_count_cat')] =====
+----Processing edge addition of:  age_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -342.97602320547776
+Delta structure score wihout fairness:  -342.97602320547776
+----Processing edge addition of:  race_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -119.69693240340484
+Delta structure score wihout fairness:  -119.69693240340484
+----Processing edge addition of:  age_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -2.6812887918753177
+Delta structure score wihout fairness:  -2.6812887918753177
+----Processing edge addition of:  juv_fel_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -85.47280204337858
+Delta structure score wihout fairness:  -85.47280204337858
+----Processing edge addition of:  c_charge_degree and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -55.61065777977046
+Delta structure score wihout fairness:  -55.61065777977046
+----Processing edge addition of:  juv_other_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -380.41523386957033
+Delta structure score wihout fairness:  -380.41523386957033
+----Processing edge addition of:  age_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  68.25130142156763
+Delta structure score wihout fairness:  68.25130142156763
+----Processing edge addition of:  race_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -42.90257959415612
+Delta structure score wihout fairness:  -42.90257959415612
+----Processing edge addition of:  juv_other_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -46.93110898377165
+Delta structure score wihout fairness:  -46.93110898377165
+----Processing edge addition of:  race_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -52.16331460780202
+Delta structure score wihout fairness:  -52.16331460780202
+----Processing edge addition of:  sex and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -160.92424728790775
+Delta structure score wihout fairness:  -160.92424728790775
+----Processing edge addition of:  c_charge_degree and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -79.80972599068764
+Delta structure score wihout fairness:  -79.80972599068764
+----Processing edge addition of:  sex and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -15.687088691211216
+Delta structure score wihout fairness:  -15.687088691211216
+----Processing edge addition of:  c_days_from_compas_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -184.04030383680686
+Delta structure score wihout fairness:  -184.04030383680686
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -219.43538546008358
+Delta structure score wihout fairness:  -219.43538546008358
+----Processing edge addition of:  juv_misd_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -389.9642433994168
+Delta structure score wihout fairness:  -389.9642433994168
+----Processing edge addition of:  sex and race_cat ----
+Old structure score before fairness:  -3963.825575402475
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  c_days_from_compas_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -389.964243399417
+Delta structure score wihout fairness:  -389.964243399417
+----Processing edge addition of:  juv_fel_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -24.695414937758414
+Delta structure score wihout fairness:  -24.695414937758414
+----Processing edge addition of:  juv_misd_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.26843388967063
+Delta structure score wihout fairness:  -262.26843388967063
+----Processing edge addition of:  juv_other_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -154.97968542448734
+Delta structure score wihout fairness:  -154.97968542448734
+----Processing edge addition of:  sex and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score with fairness:  -15.362754419258636
+Delta structure score wihout fairness:  -15.362754419258636
+----Processing edge addition of:  sex and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -64.21418143463961
+Delta structure score wihout fairness:  -64.21418143463961
+----Processing edge addition of:  sex and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -5.4225119970906235
+Delta structure score wihout fairness:  -5.4225119970906235
+----Processing edge addition of:  c_days_from_compas_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -570.9824328802429
+Delta structure score wihout fairness:  -570.9824328802429
+----Processing edge addition of:  two_year_recid and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -172.73061595592208
+Delta structure score wihout fairness:  -172.73061595592208
+----Processing edge addition of:  two_year_recid and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -22.827647828203112
+Delta structure score wihout fairness:  -22.827647828203112
+----Processing edge addition of:  juv_misd_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  50.46465859461682
+Delta structure score wihout fairness:  50.46465859461682
+----Processing edge addition of:  race_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -18.77342153513746
+Delta structure score wihout fairness:  -18.77342153513746
+----Processing edge addition of:  two_year_recid and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -43.826438266614105
+Delta structure score wihout fairness:  -43.826438266614105
+----Processing edge addition of:  juv_other_count_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.937636699625273
+Delta structure score wihout fairness:  10.937636699625273
+----Processing edge addition of:  days_b_screening_arrest_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -103.69283583472998
+Delta structure score wihout fairness:  -103.69283583472998
+----Processing edge addition of:  priors_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -5.921295986128598
+Delta structure score wihout fairness:  -5.921295986128598
+----Processing edge addition of:  juv_fel_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -114.75934125710546
+Delta structure score wihout fairness:  -114.75934125710546
+----Processing edge addition of:  c_days_from_compas_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -153.17705866486494
+Delta structure score wihout fairness:  -153.17705866486494
+----Processing edge addition of:  race_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -138.96013466370368
+Delta structure score wihout fairness:  -138.96013466370368
+----Processing edge addition of:  race_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -17.97330786384589
+Delta structure score wihout fairness:  -17.97330786384589
+----Processing edge addition of:  c_charge_degree and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -94.22781366556546
+Delta structure score wihout fairness:  -94.22781366556546
+----Processing edge addition of:  juv_fel_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  2.1572381443525046
+Delta structure score wihout fairness:  2.1572381443525046
+----Processing edge addition of:  c_charge_degree and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -24.695414937758642
+Delta structure score wihout fairness:  -24.695414937758642
+----Processing edge addition of:  age_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -250.6878174202484
+Delta structure score wihout fairness:  -250.6878174202484
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -98.01503272267121
+Delta structure score wihout fairness:  -98.01503272267121
+----Processing edge addition of:  two_year_recid and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  c_charge_degree and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -22.558782965532146
+Delta structure score wihout fairness:  -22.558782965532146
+----Processing edge addition of:  juv_other_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.90933147999294
+Delta structure score wihout fairness:  -262.90933147999294
+----Processing edge addition of:  race_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -77.00570141477374
+Delta structure score wihout fairness:  -77.00570141477374
+----Processing edge addition of:  race_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -10.03521331178672
+Delta structure score wihout fairness:  -10.03521331178672
+----Processing edge addition of:  sex and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -122.81581003174142
+Delta structure score wihout fairness:  -122.81581003174142
+----Processing edge addition of:  days_b_screening_arrest_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -302.2137067634726
+Delta structure score wihout fairness:  -302.2137067634726
+----Processing edge addition of:  juv_other_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -27.420887592485315
+Delta structure score wihout fairness:  -27.420887592485315
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -86.12966226335129
+Delta structure score wihout fairness:  -86.12966226335129
+----Processing edge addition of:  juv_misd_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -38.67870014765924
+Delta structure score wihout fairness:  -38.67870014765924
+----Processing edge addition of:  juv_other_count_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -160.3564357805808
+Delta structure score wihout fairness:  -160.3564357805808
+----Processing edge addition of:  sex and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -53.26865256997121
+Delta structure score wihout fairness:  -53.26865256997121
+----Processing edge addition of:  c_days_from_compas_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -159.01531899814177
+Delta structure score wihout fairness:  -159.01531899814177
+----Processing edge addition of:  age_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  -8.115717495566969
+Delta structure score wihout fairness:  -8.115717495566969
+----Processing edge addition of:  race_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  priors_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -747.8847514700342
+Delta structure score wihout fairness:  -747.8847514700342
+----Processing edge addition of:  two_year_recid and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -89.31725511729519
+Delta structure score wihout fairness:  -89.31725511729519
+----Processing edge addition of:  juv_misd_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -175.94338060043037
+Delta structure score wihout fairness:  -175.94338060043037
+----Processing edge addition of:  age_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -0.8305509187503048
+Delta structure score wihout fairness:  -0.8305509187503048
+----Processing edge addition of:  two_year_recid and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  24.83848334665049
+Delta structure score wihout fairness:  24.83848334665049
+----Processing edge addition of:  juv_fel_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -184.04030383680674
+Delta structure score wihout fairness:  -184.04030383680674
+----Processing edge addition of:  juv_other_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -49.07798414824492
+Delta structure score wihout fairness:  -49.07798414824492
+----Processing edge addition of:  sex and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -10.725247766842585
+Delta structure score wihout fairness:  -10.725247766842585
+----Processing edge addition of:  juv_fel_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score with fairness:  -38.67870014765913
+Delta structure score wihout fairness:  -38.67870014765913
+----Processing edge addition of:  c_charge_degree and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -153.1770586648654
+Delta structure score wihout fairness:  -153.1770586648654
+----Processing edge addition of:  juv_misd_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -55.61065777977092
+Delta structure score wihout fairness:  -55.61065777977092
+----Processing edge removal of:  race_cat and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score:  -74.09325001499292
+Delta structure score wihout fairness:  -74.09325001499292
+----Processing edge removal of:  age_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  -138.0511526568207
+Delta structure score wihout fairness:  -138.0511526568207
+----Processing edge removal of:  age_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score:  -132.0507116292913
+Delta structure score wihout fairness:  -132.0507116292913
+----Processing edge removal of:  priors_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score:  -340.09881993108274
+Delta structure score wihout fairness:  -340.09881993108274
+----Processing edge removal of:  priors_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score:  -77.59698001271772
+Delta structure score wihout fairness:  -77.59698001271772
+----Processing edge removal of:  priors_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1387.9133456281563
+Delta structure score:  -184.41133662077914
+Delta structure score wihout fairness:  -184.41133662077914
+----Processing edge removal of:  priors_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score:  -114.80426594550772
+Delta structure score wihout fairness:  -114.80426594550772
+----Processing edge removal of:  priors_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score:  -75.20426665883133
+Delta structure score wihout fairness:  -75.20426665883133
+----Processing edge removal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score:  -3222.103578774046
+Delta structure score wihout fairness:  -3222.103578774046
+----Processing edge removal of:  sex and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  8.073694038161193
+Delta structure score wihout fairness:  8.073694038161193
+----Processing edge reversal of:  race_cat and age_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  9.094947017729282e-13
+----Processing edge reversal of:  age_cat and priors_count_cat ----
+Delta structure score:  22.419743510894477
+Delta structure score wihout fairness:  22.419743510896296
+----Processing edge reversal of:  age_cat and juv_other_count_cat ----
+Delta structure score:  -6.876176440692689
+Delta structure score wihout fairness:  -6.876176440692234
+----Processing edge reversal of:  priors_count_cat and two_year_recid ----
+Delta structure score:  -87.88365969538609
+Delta structure score wihout fairness:  -87.88365969538654
+----Processing edge reversal of:  priors_count_cat and c_days_from_compas_cat ----
+Delta structure score:  -829.9356158874834
+Delta structure score wihout fairness:  -829.9356158874843
+----Processing edge reversal of:  priors_count_cat and juv_misd_count_cat ----
+Delta structure score:  -160.7818883375876
+Delta structure score wihout fairness:  -160.78188833758736
+----Processing edge reversal of:  priors_count_cat and juv_fel_count_cat ----
+Delta structure score:  -95.3452340990807
+Delta structure score wihout fairness:  -95.3452340990815
+----Processing edge reversal of:  priors_count_cat and c_charge_degree ----
+Delta structure score:  -86.4671829285544
+Delta structure score wihout fairness:  -86.46718292855485
+----Processing edge reversal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Delta structure score:  -764.9680863164122
+Delta structure score wihout fairness:  -764.9680863164117
+----Processing edge reversal of:  sex and priors_count_cat ----
+Delta structure score:  43.21584493581395
+Delta structure score wihout fairness:  43.21584493581395
+=====Model edges:  [('race_cat', 'age_cat'), ('age_cat', 'priors_count_cat'), ('age_cat', 'juv_other_count_cat'), ('age_cat', 'two_year_recid'), ('age_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'two_year_recid'), ('priors_count_cat', 'c_days_from_compas_cat'), ('priors_count_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'juv_fel_count_cat'), ('priors_count_cat', 'c_charge_degree'), ('c_days_from_compas_cat', 'days_b_screening_arrest_cat'), ('sex', 'priors_count_cat')] =====
+----Processing edge addition of:  age_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -342.97602320547776
+Delta structure score wihout fairness:  -342.97602320547776
+----Processing edge addition of:  race_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -119.69693240340484
+Delta structure score wihout fairness:  -119.69693240340484
+----Processing edge addition of:  age_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -2.6812887918753177
+Delta structure score wihout fairness:  -2.6812887918753177
+----Processing edge addition of:  juv_fel_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -85.47280204337858
+Delta structure score wihout fairness:  -85.47280204337858
+----Processing edge addition of:  c_charge_degree and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -171.18676194215595
+Delta structure score wihout fairness:  -171.18676194215595
+----Processing edge addition of:  juv_other_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -380.41523386957033
+Delta structure score wihout fairness:  -380.41523386957033
+----Processing edge addition of:  juv_other_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -46.93110898377165
+Delta structure score wihout fairness:  -46.93110898377165
+----Processing edge addition of:  race_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -167.66762879324506
+Delta structure score wihout fairness:  -167.66762879324506
+----Processing edge addition of:  race_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -52.16331460780202
+Delta structure score wihout fairness:  -52.16331460780202
+----Processing edge addition of:  sex and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -160.92424728790775
+Delta structure score wihout fairness:  -160.92424728790775
+----Processing edge addition of:  c_charge_degree and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -79.80972599068764
+Delta structure score wihout fairness:  -79.80972599068764
+----Processing edge addition of:  sex and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -15.687088691211216
+Delta structure score wihout fairness:  -15.687088691211216
+----Processing edge addition of:  c_days_from_compas_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -184.04030383680686
+Delta structure score wihout fairness:  -184.04030383680686
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -698.7251842432775
+Delta structure score wihout fairness:  -698.7251842432775
+----Processing edge addition of:  juv_misd_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -389.9642433994168
+Delta structure score wihout fairness:  -389.9642433994168
+----Processing edge addition of:  sex and race_cat ----
+Old structure score before fairness:  -3963.825575402475
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  c_days_from_compas_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -1228.8391995594325
+Delta structure score wihout fairness:  -1228.8391995594325
+----Processing edge addition of:  juv_fel_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -24.695414937758414
+Delta structure score wihout fairness:  -24.695414937758414
+----Processing edge addition of:  juv_misd_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.26843388967063
+Delta structure score wihout fairness:  -262.26843388967063
+----Processing edge addition of:  juv_other_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -154.97968542448734
+Delta structure score wihout fairness:  -154.97968542448734
+----Processing edge addition of:  sex and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score with fairness:  -15.362754419258636
+Delta structure score wihout fairness:  -15.362754419258636
+----Processing edge addition of:  sex and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -64.21418143463961
+Delta structure score wihout fairness:  -64.21418143463961
+----Processing edge addition of:  sex and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -5.4225119970906235
+Delta structure score wihout fairness:  -5.4225119970906235
+----Processing edge addition of:  c_days_from_compas_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -570.9824328802429
+Delta structure score wihout fairness:  -570.9824328802429
+----Processing edge addition of:  two_year_recid and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -172.73061595592208
+Delta structure score wihout fairness:  -172.73061595592208
+----Processing edge addition of:  two_year_recid and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -22.827647828203112
+Delta structure score wihout fairness:  -22.827647828203112
+----Processing edge addition of:  juv_misd_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  50.46465859461682
+Delta structure score wihout fairness:  50.46465859461682
+----Processing edge addition of:  race_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -18.77342153513746
+Delta structure score wihout fairness:  -18.77342153513746
+----Processing edge addition of:  two_year_recid and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -175.94338060042992
+Delta structure score wihout fairness:  -175.94338060042992
+----Processing edge addition of:  juv_other_count_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.937636699625273
+Delta structure score wihout fairness:  10.937636699625273
+----Processing edge addition of:  days_b_screening_arrest_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -103.69283583472998
+Delta structure score wihout fairness:  -103.69283583472998
+----Processing edge addition of:  priors_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -5.921295986128598
+Delta structure score wihout fairness:  -5.921295986128598
+----Processing edge addition of:  juv_fel_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -114.75934125710546
+Delta structure score wihout fairness:  -114.75934125710546
+----Processing edge addition of:  c_days_from_compas_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -153.17705866486494
+Delta structure score wihout fairness:  -153.17705866486494
+----Processing edge addition of:  race_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -138.96013466370368
+Delta structure score wihout fairness:  -138.96013466370368
+----Processing edge addition of:  race_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -17.97330786384589
+Delta structure score wihout fairness:  -17.97330786384589
+----Processing edge addition of:  c_charge_degree and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -94.22781366556546
+Delta structure score wihout fairness:  -94.22781366556546
+----Processing edge addition of:  juv_fel_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  2.1572381443525046
+Delta structure score wihout fairness:  2.1572381443525046
+----Processing edge addition of:  c_charge_degree and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -24.695414937758642
+Delta structure score wihout fairness:  -24.695414937758642
+----Processing edge addition of:  age_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -250.6878174202484
+Delta structure score wihout fairness:  -250.6878174202484
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -98.01503272267121
+Delta structure score wihout fairness:  -98.01503272267121
+----Processing edge addition of:  two_year_recid and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  c_charge_degree and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -22.558782965532146
+Delta structure score wihout fairness:  -22.558782965532146
+----Processing edge addition of:  juv_other_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.90933147999294
+Delta structure score wihout fairness:  -262.90933147999294
+----Processing edge addition of:  race_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -77.00570141477374
+Delta structure score wihout fairness:  -77.00570141477374
+----Processing edge addition of:  race_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -10.03521331178672
+Delta structure score wihout fairness:  -10.03521331178672
+----Processing edge addition of:  sex and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -122.81581003174142
+Delta structure score wihout fairness:  -122.81581003174142
+----Processing edge addition of:  days_b_screening_arrest_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -302.2137067634726
+Delta structure score wihout fairness:  -302.2137067634726
+----Processing edge addition of:  juv_other_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -306.8476510315618
+Delta structure score wihout fairness:  -306.8476510315618
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -86.12966226335129
+Delta structure score wihout fairness:  -86.12966226335129
+----Processing edge addition of:  juv_misd_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -38.67870014765924
+Delta structure score wihout fairness:  -38.67870014765924
+----Processing edge addition of:  juv_other_count_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -160.3564357805808
+Delta structure score wihout fairness:  -160.3564357805808
+----Processing edge addition of:  sex and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -166.49214006280408
+Delta structure score wihout fairness:  -166.49214006280408
+----Processing edge addition of:  c_days_from_compas_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  -159.01531899814177
+Delta structure score wihout fairness:  -159.01531899814177
+----Processing edge addition of:  age_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  -8.115717495566969
+Delta structure score wihout fairness:  -8.115717495566969
+----Processing edge addition of:  race_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  priors_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -747.8847514700342
+Delta structure score wihout fairness:  -747.8847514700342
+----Processing edge addition of:  two_year_recid and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -89.31725511729519
+Delta structure score wihout fairness:  -89.31725511729519
+----Processing edge addition of:  juv_misd_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -175.94338060043037
+Delta structure score wihout fairness:  -175.94338060043037
+----Processing edge addition of:  age_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -0.8305509187503048
+Delta structure score wihout fairness:  -0.8305509187503048
+----Processing edge addition of:  two_year_recid and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score with fairness:  24.83848334665049
+Delta structure score wihout fairness:  24.83848334665049
+----Processing edge addition of:  juv_fel_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -184.04030383680674
+Delta structure score wihout fairness:  -184.04030383680674
+----Processing edge addition of:  juv_other_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -49.07798414824492
+Delta structure score wihout fairness:  -49.07798414824492
+----Processing edge addition of:  sex and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -10.725247766842585
+Delta structure score wihout fairness:  -10.725247766842585
+----Processing edge addition of:  juv_fel_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -163.24382562439678
+Delta structure score wihout fairness:  -163.24382562439678
+----Processing edge addition of:  c_charge_degree and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -153.1770586648654
+Delta structure score wihout fairness:  -153.1770586648654
+----Processing edge addition of:  juv_misd_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -55.61065777977092
+Delta structure score wihout fairness:  -55.61065777977092
+----Processing edge removal of:  race_cat and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score:  -74.09325001499292
+Delta structure score wihout fairness:  -74.09325001499292
+----Processing edge removal of:  age_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  -138.0511526568207
+Delta structure score wihout fairness:  -138.0511526568207
+----Processing edge removal of:  age_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1794.7802287918098
+Delta structure score:  -132.0507116292913
+Delta structure score wihout fairness:  -132.0507116292913
+----Processing edge removal of:  priors_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score:  -340.09881993108274
+Delta structure score wihout fairness:  -340.09881993108274
+----Processing edge removal of:  priors_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score:  -77.59698001271772
+Delta structure score wihout fairness:  -77.59698001271772
+----Processing edge removal of:  priors_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score:  -181.93354508141397
+Delta structure score wihout fairness:  -181.93354508141397
+----Processing edge removal of:  priors_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score:  -114.80426594550772
+Delta structure score wihout fairness:  -114.80426594550772
+----Processing edge removal of:  priors_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score:  -75.20426665883133
+Delta structure score wihout fairness:  -75.20426665883133
+----Processing edge removal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score:  -3222.103578774046
+Delta structure score wihout fairness:  -3222.103578774046
+----Processing edge removal of:  sex and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  8.073694038161193
+Delta structure score wihout fairness:  8.073694038161193
+----Processing edge reversal of:  race_cat and age_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  9.094947017729282e-13
+----Processing edge reversal of:  age_cat and priors_count_cat ----
+Delta structure score:  22.419743510894477
+Delta structure score wihout fairness:  22.419743510896296
+----Processing edge reversal of:  age_cat and juv_other_count_cat ----
+Delta structure score:  -6.876176440692689
+Delta structure score wihout fairness:  -6.876176440692234
+----Processing edge reversal of:  priors_count_cat and two_year_recid ----
+Delta structure score:  -87.88365969538609
+Delta structure score wihout fairness:  -87.88365969538654
+----Processing edge reversal of:  priors_count_cat and c_days_from_compas_cat ----
+Delta structure score:  -829.9356158874834
+Delta structure score wihout fairness:  -829.9356158874843
+----Processing edge reversal of:  priors_count_cat and juv_misd_count_cat ----
+Delta structure score:  -158.30409679822333
+Delta structure score wihout fairness:  -158.30409679822333
+----Processing edge reversal of:  priors_count_cat and juv_fel_count_cat ----
+Delta structure score:  -95.3452340990807
+Delta structure score wihout fairness:  -95.3452340990815
+----Processing edge reversal of:  priors_count_cat and c_charge_degree ----
+Delta structure score:  -86.4671829285544
+Delta structure score wihout fairness:  -86.46718292855485
+----Processing edge reversal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Delta structure score:  -764.9680863164122
+Delta structure score wihout fairness:  -764.9680863164117
+----Processing edge reversal of:  sex and priors_count_cat ----
+Delta structure score:  43.21584493581395
+Delta structure score wihout fairness:  43.21584493581395
+=====Model edges:  [('race_cat', 'age_cat'), ('age_cat', 'priors_count_cat'), ('age_cat', 'juv_other_count_cat'), ('age_cat', 'two_year_recid'), ('age_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'two_year_recid'), ('priors_count_cat', 'c_days_from_compas_cat'), ('priors_count_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'juv_fel_count_cat'), ('priors_count_cat', 'c_charge_degree'), ('c_days_from_compas_cat', 'days_b_screening_arrest_cat'), ('juv_misd_count_cat', 'juv_other_count_cat'), ('sex', 'priors_count_cat')] =====
+----Processing edge addition of:  age_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -342.97602320547776
+Delta structure score wihout fairness:  -342.97602320547776
+----Processing edge addition of:  race_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -119.69693240340484
+Delta structure score wihout fairness:  -119.69693240340484
+----Processing edge addition of:  age_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -2.6812887918753177
+Delta structure score wihout fairness:  -2.6812887918753177
+----Processing edge addition of:  juv_fel_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -85.47280204337858
+Delta structure score wihout fairness:  -85.47280204337858
+----Processing edge addition of:  c_charge_degree and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -171.18676194215595
+Delta structure score wihout fairness:  -171.18676194215595
+----Processing edge addition of:  juv_other_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -380.41523386957033
+Delta structure score wihout fairness:  -380.41523386957033
+----Processing edge addition of:  juv_other_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -46.93110898377165
+Delta structure score wihout fairness:  -46.93110898377165
+----Processing edge addition of:  race_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -167.66762879324506
+Delta structure score wihout fairness:  -167.66762879324506
+----Processing edge addition of:  race_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score with fairness:  -52.16331460780202
+Delta structure score wihout fairness:  -52.16331460780202
+----Processing edge addition of:  sex and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -160.92424728790775
+Delta structure score wihout fairness:  -160.92424728790775
+----Processing edge addition of:  c_charge_degree and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -79.80972599068764
+Delta structure score wihout fairness:  -79.80972599068764
+----Processing edge addition of:  sex and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -15.687088691211216
+Delta structure score wihout fairness:  -15.687088691211216
+----Processing edge addition of:  c_days_from_compas_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -184.04030383680686
+Delta structure score wihout fairness:  -184.04030383680686
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -698.7251842432775
+Delta structure score wihout fairness:  -698.7251842432775
+----Processing edge addition of:  juv_misd_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -389.9642433994168
+Delta structure score wihout fairness:  -389.9642433994168
+----Processing edge addition of:  sex and race_cat ----
+Old structure score before fairness:  -3963.825575402475
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  c_days_from_compas_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -1228.8391995594325
+Delta structure score wihout fairness:  -1228.8391995594325
+----Processing edge addition of:  juv_fel_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -24.695414937758414
+Delta structure score wihout fairness:  -24.695414937758414
+----Processing edge addition of:  juv_misd_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.26843388967063
+Delta structure score wihout fairness:  -262.26843388967063
+----Processing edge addition of:  juv_other_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -154.97968542448734
+Delta structure score wihout fairness:  -154.97968542448734
+----Processing edge addition of:  sex and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score with fairness:  -15.362754419258636
+Delta structure score wihout fairness:  -15.362754419258636
+----Processing edge addition of:  sex and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -64.21418143463961
+Delta structure score wihout fairness:  -64.21418143463961
+----Processing edge addition of:  sex and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -52.49273273392919
+Delta structure score wihout fairness:  -52.49273273392919
+----Processing edge addition of:  c_days_from_compas_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -570.9824328802429
+Delta structure score wihout fairness:  -570.9824328802429
+----Processing edge addition of:  two_year_recid and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -172.73061595592208
+Delta structure score wihout fairness:  -172.73061595592208
+----Processing edge addition of:  two_year_recid and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -22.827647828203112
+Delta structure score wihout fairness:  -22.827647828203112
+----Processing edge addition of:  race_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -18.77342153513746
+Delta structure score wihout fairness:  -18.77342153513746
+----Processing edge addition of:  two_year_recid and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -175.94338060042992
+Delta structure score wihout fairness:  -175.94338060042992
+----Processing edge addition of:  days_b_screening_arrest_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -103.69283583472998
+Delta structure score wihout fairness:  -103.69283583472998
+----Processing edge addition of:  priors_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -363.233605612307
+Delta structure score wihout fairness:  -363.233605612307
+----Processing edge addition of:  juv_fel_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -114.75934125710546
+Delta structure score wihout fairness:  -114.75934125710546
+----Processing edge addition of:  c_days_from_compas_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -153.17705866486494
+Delta structure score wihout fairness:  -153.17705866486494
+----Processing edge addition of:  race_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -138.96013466370368
+Delta structure score wihout fairness:  -138.96013466370368
+----Processing edge addition of:  race_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -17.97330786384589
+Delta structure score wihout fairness:  -17.97330786384589
+----Processing edge addition of:  c_charge_degree and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -94.22781366556546
+Delta structure score wihout fairness:  -94.22781366556546
+----Processing edge addition of:  juv_fel_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -48.75460916435327
+Delta structure score wihout fairness:  -48.75460916435327
+----Processing edge addition of:  c_charge_degree and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -24.695414937758642
+Delta structure score wihout fairness:  -24.695414937758642
+----Processing edge addition of:  age_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -250.6878174202484
+Delta structure score wihout fairness:  -250.6878174202484
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -98.01503272267121
+Delta structure score wihout fairness:  -98.01503272267121
+----Processing edge addition of:  two_year_recid and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  c_charge_degree and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -68.36489046935435
+Delta structure score wihout fairness:  -68.36489046935435
+----Processing edge addition of:  juv_other_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.90933147999294
+Delta structure score wihout fairness:  -262.90933147999294
+----Processing edge addition of:  race_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -77.00570141477374
+Delta structure score wihout fairness:  -77.00570141477374
+----Processing edge addition of:  race_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -60.42478189375743
+Delta structure score wihout fairness:  -60.42478189375743
+----Processing edge addition of:  sex and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -122.81581003174142
+Delta structure score wihout fairness:  -122.81581003174142
+----Processing edge addition of:  days_b_screening_arrest_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -302.2137067634726
+Delta structure score wihout fairness:  -302.2137067634726
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -278.4095858266553
+Delta structure score wihout fairness:  -278.4095858266553
+----Processing edge addition of:  juv_misd_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -38.67870014765924
+Delta structure score wihout fairness:  -38.67870014765924
+----Processing edge addition of:  sex and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -166.49214006280408
+Delta structure score wihout fairness:  -166.49214006280408
+----Processing edge addition of:  c_days_from_compas_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -505.7137115897365
+Delta structure score wihout fairness:  -505.7137115897365
+----Processing edge addition of:  age_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  -8.115717495566969
+Delta structure score wihout fairness:  -8.115717495566969
+----Processing edge addition of:  race_cat and sex ----
+Old structure score before fairness:  -3008.6932188076785
+Delta structure score with fairness:  10.899834313764131
+Delta structure score wihout fairness:  10.899834313764131
+----Processing edge addition of:  priors_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -747.8847514700342
+Delta structure score wihout fairness:  -747.8847514700342
+----Processing edge addition of:  two_year_recid and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -89.31725511729519
+Delta structure score wihout fairness:  -89.31725511729519
+----Processing edge addition of:  juv_misd_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -175.94338060043037
+Delta structure score wihout fairness:  -175.94338060043037
+----Processing edge addition of:  age_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -0.8305509187503048
+Delta structure score wihout fairness:  -0.8305509187503048
+----Processing edge addition of:  two_year_recid and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -39.36901044274077
+Delta structure score wihout fairness:  -39.36901044274077
+----Processing edge addition of:  juv_fel_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -184.04030383680674
+Delta structure score wihout fairness:  -184.04030383680674
+----Processing edge addition of:  juv_other_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -49.07798414824492
+Delta structure score wihout fairness:  -49.07798414824492
+----Processing edge addition of:  sex and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -10.725247766842585
+Delta structure score wihout fairness:  -10.725247766842585
+----Processing edge addition of:  juv_fel_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -163.24382562439678
+Delta structure score wihout fairness:  -163.24382562439678
+----Processing edge addition of:  c_charge_degree and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -153.1770586648654
+Delta structure score wihout fairness:  -153.1770586648654
+----Processing edge addition of:  juv_misd_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -55.61065777977092
+Delta structure score wihout fairness:  -55.61065777977092
+----Processing edge removal of:  race_cat and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score:  -74.09325001499292
+Delta structure score wihout fairness:  -74.09325001499292
+----Processing edge removal of:  age_cat and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  -138.0511526568207
+Delta structure score wihout fairness:  -138.0511526568207
+----Processing edge removal of:  age_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score:  -79.97061229888209
+Delta structure score wihout fairness:  -79.97061229888209
+----Processing edge removal of:  priors_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score:  -340.09881993108274
+Delta structure score wihout fairness:  -340.09881993108274
+----Processing edge removal of:  priors_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score:  -77.59698001271772
+Delta structure score wihout fairness:  -77.59698001271772
+----Processing edge removal of:  priors_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score:  -181.93354508141397
+Delta structure score wihout fairness:  -181.93354508141397
+----Processing edge removal of:  priors_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score:  -114.80426594550772
+Delta structure score wihout fairness:  -114.80426594550772
+----Processing edge removal of:  priors_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score:  -75.20426665883133
+Delta structure score wihout fairness:  -75.20426665883133
+----Processing edge removal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score:  -3222.103578774046
+Delta structure score wihout fairness:  -3222.103578774046
+----Processing edge removal of:  sex and priors_count_cat ----
+Old structure score before fairness:  -10507.128089059683
+Delta structure score:  8.073694038161193
+Delta structure score wihout fairness:  8.073694038161193
+----Processing edge reversal of:  race_cat and age_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  9.094947017729282e-13
+----Processing edge reversal of:  age_cat and priors_count_cat ----
+Delta structure score:  22.419743510894477
+Delta structure score wihout fairness:  22.419743510896296
+----Processing edge reversal of:  priors_count_cat and two_year_recid ----
+Delta structure score:  -87.88365969538609
+Delta structure score wihout fairness:  -87.88365969538654
+----Processing edge reversal of:  priors_count_cat and c_days_from_compas_cat ----
+Delta structure score:  -829.9356158874834
+Delta structure score wihout fairness:  -829.9356158874843
+----Processing edge reversal of:  priors_count_cat and juv_misd_count_cat ----
+Delta structure score:  -158.30409679822333
+Delta structure score wihout fairness:  -158.30409679822333
+----Processing edge reversal of:  priors_count_cat and juv_fel_count_cat ----
+Delta structure score:  -95.3452340990807
+Delta structure score wihout fairness:  -95.3452340990815
+----Processing edge reversal of:  priors_count_cat and c_charge_degree ----
+Delta structure score:  -86.4671829285544
+Delta structure score wihout fairness:  -86.46718292855485
+----Processing edge reversal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Delta structure score:  -764.9680863164122
+Delta structure score wihout fairness:  -764.9680863164117
+----Processing edge reversal of:  juv_misd_count_cat and juv_other_count_cat ----
+Delta structure score:  -357.31230962617883
+Delta structure score wihout fairness:  -357.3123096261786
+----Processing edge reversal of:  sex and priors_count_cat ----
+Delta structure score:  43.21584493581395
+Delta structure score wihout fairness:  43.21584493581395
+=====Model edges:  [('race_cat', 'age_cat'), ('age_cat', 'priors_count_cat'), ('age_cat', 'juv_other_count_cat'), ('age_cat', 'two_year_recid'), ('age_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'two_year_recid'), ('priors_count_cat', 'c_days_from_compas_cat'), ('priors_count_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'juv_fel_count_cat'), ('priors_count_cat', 'c_charge_degree'), ('priors_count_cat', 'sex'), ('c_days_from_compas_cat', 'days_b_screening_arrest_cat'), ('juv_misd_count_cat', 'juv_other_count_cat')] =====
+----Processing edge addition of:  age_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -342.97602320547776
+Delta structure score wihout fairness:  -342.97602320547776
+----Processing edge addition of:  race_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -119.69693240340484
+Delta structure score wihout fairness:  -119.69693240340484
+----Processing edge addition of:  age_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -2.6812887918753177
+Delta structure score wihout fairness:  -2.6812887918753177
+----Processing edge addition of:  two_year_recid and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -14.06989955623385
+Delta structure score wihout fairness:  -14.06989955623385
+----Processing edge addition of:  juv_fel_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -85.47280204337858
+Delta structure score wihout fairness:  -85.47280204337858
+----Processing edge addition of:  c_charge_degree and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -171.18676194215595
+Delta structure score wihout fairness:  -171.18676194215595
+----Processing edge addition of:  juv_other_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -380.41523386957033
+Delta structure score wihout fairness:  -380.41523386957033
+----Processing edge addition of:  juv_other_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -46.93110898377165
+Delta structure score wihout fairness:  -46.93110898377165
+----Processing edge addition of:  race_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -167.66762879324506
+Delta structure score wihout fairness:  -167.66762879324506
+----Processing edge addition of:  race_cat and priors_count_cat ----
+Old structure score before fairness:  -10499.054395021521
+Delta structure score with fairness:  30.44326331648699
+Delta structure score wihout fairness:  30.44326331648699
+----Processing edge addition of:  sex and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -160.92424728790775
+Delta structure score wihout fairness:  -160.92424728790775
+----Processing edge addition of:  c_charge_degree and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -79.80972599068764
+Delta structure score wihout fairness:  -79.80972599068764
+----Processing edge addition of:  sex and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -15.687088691211216
+Delta structure score wihout fairness:  -15.687088691211216
+----Processing edge addition of:  c_days_from_compas_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -184.04030383680686
+Delta structure score wihout fairness:  -184.04030383680686
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -698.7251842432775
+Delta structure score wihout fairness:  -698.7251842432775
+----Processing edge addition of:  juv_misd_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -389.9642433994168
+Delta structure score wihout fairness:  -389.9642433994168
+----Processing edge addition of:  c_days_from_compas_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -1228.8391995594325
+Delta structure score wihout fairness:  -1228.8391995594325
+----Processing edge addition of:  juv_fel_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -24.695414937758414
+Delta structure score wihout fairness:  -24.695414937758414
+----Processing edge addition of:  juv_misd_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.26843388967063
+Delta structure score wihout fairness:  -262.26843388967063
+----Processing edge addition of:  juv_other_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -154.97968542448734
+Delta structure score wihout fairness:  -154.97968542448734
+----Processing edge addition of:  sex and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -64.21418143463961
+Delta structure score wihout fairness:  -64.21418143463961
+----Processing edge addition of:  sex and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -52.49273273392919
+Delta structure score wihout fairness:  -52.49273273392919
+----Processing edge addition of:  c_days_from_compas_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -570.9824328802429
+Delta structure score wihout fairness:  -570.9824328802429
+----Processing edge addition of:  two_year_recid and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -172.73061595592208
+Delta structure score wihout fairness:  -172.73061595592208
+----Processing edge addition of:  two_year_recid and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -22.827647828203112
+Delta structure score wihout fairness:  -22.827647828203112
+----Processing edge addition of:  race_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -18.77342153513746
+Delta structure score wihout fairness:  -18.77342153513746
+----Processing edge addition of:  two_year_recid and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -175.94338060042992
+Delta structure score wihout fairness:  -175.94338060042992
+----Processing edge addition of:  juv_other_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -43.24514050265543
+Delta structure score wihout fairness:  -43.24514050265543
+----Processing edge addition of:  days_b_screening_arrest_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -103.69283583472998
+Delta structure score wihout fairness:  -103.69283583472998
+----Processing edge addition of:  priors_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -363.233605612307
+Delta structure score wihout fairness:  -363.233605612307
+----Processing edge addition of:  juv_fel_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -114.75934125710546
+Delta structure score wihout fairness:  -114.75934125710546
+----Processing edge addition of:  c_days_from_compas_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -153.17705866486494
+Delta structure score wihout fairness:  -153.17705866486494
+----Processing edge addition of:  juv_misd_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -53.26865256997007
+Delta structure score wihout fairness:  -53.26865256997007
+----Processing edge addition of:  race_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -138.96013466370368
+Delta structure score wihout fairness:  -138.96013466370368
+----Processing edge addition of:  race_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -17.97330786384589
+Delta structure score wihout fairness:  -17.97330786384589
+----Processing edge addition of:  c_charge_degree and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -94.22781366556546
+Delta structure score wihout fairness:  -94.22781366556546
+----Processing edge addition of:  juv_fel_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -48.75460916435327
+Delta structure score wihout fairness:  -48.75460916435327
+----Processing edge addition of:  c_charge_degree and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -24.695414937758642
+Delta structure score wihout fairness:  -24.695414937758642
+----Processing edge addition of:  age_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -250.6878174202484
+Delta structure score wihout fairness:  -250.6878174202484
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -98.01503272267121
+Delta structure score wihout fairness:  -98.01503272267121
+----Processing edge addition of:  two_year_recid and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  c_charge_degree and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -68.36489046935435
+Delta structure score wihout fairness:  -68.36489046935435
+----Processing edge addition of:  juv_other_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.90933147999294
+Delta structure score wihout fairness:  -262.90933147999294
+----Processing edge addition of:  race_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -77.00570141477374
+Delta structure score wihout fairness:  -77.00570141477374
+----Processing edge addition of:  race_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -60.42478189375743
+Delta structure score wihout fairness:  -60.42478189375743
+----Processing edge addition of:  sex and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -122.81581003174142
+Delta structure score wihout fairness:  -122.81581003174142
+----Processing edge addition of:  juv_fel_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -15.687088691210647
+Delta structure score wihout fairness:  -15.687088691210647
+----Processing edge addition of:  days_b_screening_arrest_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -302.2137067634726
+Delta structure score wihout fairness:  -302.2137067634726
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -278.4095858266553
+Delta structure score wihout fairness:  -278.4095858266553
+----Processing edge addition of:  juv_misd_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -38.67870014765924
+Delta structure score wihout fairness:  -38.67870014765924
+----Processing edge addition of:  sex and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -166.49214006280408
+Delta structure score wihout fairness:  -166.49214006280408
+----Processing edge addition of:  c_days_from_compas_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -505.7137115897365
+Delta structure score wihout fairness:  -505.7137115897365
+----Processing edge addition of:  c_charge_degree and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -10.72524776684213
+Delta structure score wihout fairness:  -10.72524776684213
+----Processing edge addition of:  age_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -51.33156243137864
+Delta structure score wihout fairness:  -51.33156243137864
+----Processing edge addition of:  race_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -19.14178783269108
+Delta structure score wihout fairness:  -19.14178783269108
+----Processing edge addition of:  priors_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -747.8847514700342
+Delta structure score wihout fairness:  -747.8847514700342
+----Processing edge addition of:  two_year_recid and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -89.31725511729519
+Delta structure score wihout fairness:  -89.31725511729519
+----Processing edge addition of:  days_b_screening_arrest_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -77.84614585082
+Delta structure score wihout fairness:  -77.84614585082
+----Processing edge addition of:  juv_misd_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -175.94338060043037
+Delta structure score wihout fairness:  -175.94338060043037
+----Processing edge addition of:  age_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -0.8305509187503048
+Delta structure score wihout fairness:  -0.8305509187503048
+----Processing edge addition of:  c_days_from_compas_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -160.92424728790684
+Delta structure score wihout fairness:  -160.92424728790684
+----Processing edge addition of:  two_year_recid and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -39.36901044274077
+Delta structure score wihout fairness:  -39.36901044274077
+----Processing edge addition of:  juv_fel_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -184.04030383680674
+Delta structure score wihout fairness:  -184.04030383680674
+----Processing edge addition of:  juv_other_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -49.07798414824492
+Delta structure score wihout fairness:  -49.07798414824492
+----Processing edge addition of:  sex and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -10.725247766842585
+Delta structure score wihout fairness:  -10.725247766842585
+----Processing edge addition of:  juv_fel_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -163.24382562439678
+Delta structure score wihout fairness:  -163.24382562439678
+----Processing edge addition of:  c_charge_degree and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -153.1770586648654
+Delta structure score wihout fairness:  -153.1770586648654
+----Processing edge addition of:  juv_misd_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -55.61065777977092
+Delta structure score wihout fairness:  -55.61065777977092
+----Processing edge removal of:  race_cat and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score:  -74.09325001499292
+Delta structure score wihout fairness:  -74.09325001499292
+----Processing edge removal of:  age_cat and priors_count_cat ----
+Old structure score before fairness:  -10499.054395021521
+Delta structure score:  -181.26699759263283
+Delta structure score wihout fairness:  -181.26699759263283
+----Processing edge removal of:  age_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score:  -79.97061229888209
+Delta structure score wihout fairness:  -79.97061229888209
+----Processing edge removal of:  priors_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score:  -340.09881993108274
+Delta structure score wihout fairness:  -340.09881993108274
+----Processing edge removal of:  priors_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score:  -77.59698001271772
+Delta structure score wihout fairness:  -77.59698001271772
+----Processing edge removal of:  priors_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score:  -181.93354508141397
+Delta structure score wihout fairness:  -181.93354508141397
+----Processing edge removal of:  priors_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score:  -114.80426594550772
+Delta structure score wihout fairness:  -114.80426594550772
+----Processing edge removal of:  priors_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score:  -75.20426665883133
+Delta structure score wihout fairness:  -75.20426665883133
+----Processing edge removal of:  priors_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score:  -35.142150897651845
+Delta structure score wihout fairness:  -35.142150897651845
+----Processing edge removal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score:  -3222.103578774046
+Delta structure score wihout fairness:  -3222.103578774046
+----Processing edge reversal of:  race_cat and age_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  9.094947017729282e-13
+----Processing edge reversal of:  age_cat and priors_count_cat ----
+Delta structure score:  -20.79610142491947
+Delta structure score wihout fairness:  -20.79610142491765
+----Processing edge reversal of:  priors_count_cat and two_year_recid ----
+Delta structure score:  1.8189894035458565e-12
+Delta structure score wihout fairness:  1.3642420526593924e-12
+----Processing edge reversal of:  priors_count_cat and c_days_from_compas_cat ----
+Delta structure score:  -322.92562192651167
+Delta structure score wihout fairness:  -322.9256219265126
+----Processing edge reversal of:  priors_count_cat and juv_misd_count_cat ----
+Delta structure score:  -1.8189894035458565e-12
+Delta structure score wihout fairness:  -1.8189894035458565e-12
+----Processing edge reversal of:  priors_count_cat and juv_fel_count_cat ----
+Delta structure score:  -11.999536382278166
+Delta structure score wihout fairness:  -11.999536382278961
+----Processing edge reversal of:  priors_count_cat and c_charge_degree ----
+Delta structure score:  -21.91796862429692
+Delta structure score wihout fairness:  -21.917968624297373
+----Processing edge reversal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Delta structure score:  -764.9680863164122
+Delta structure score wihout fairness:  -764.9680863164117
+----Processing edge reversal of:  juv_misd_count_cat and juv_other_count_cat ----
+Delta structure score:  -357.31230962617883
+Delta structure score wihout fairness:  -357.3123096261786
+=====Model edges:  [('race_cat', 'age_cat'), ('race_cat', 'priors_count_cat'), ('age_cat', 'priors_count_cat'), ('age_cat', 'juv_other_count_cat'), ('age_cat', 'two_year_recid'), ('age_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'two_year_recid'), ('priors_count_cat', 'c_days_from_compas_cat'), ('priors_count_cat', 'juv_misd_count_cat'), ('priors_count_cat', 'juv_fel_count_cat'), ('priors_count_cat', 'c_charge_degree'), ('priors_count_cat', 'sex'), ('c_days_from_compas_cat', 'days_b_screening_arrest_cat'), ('juv_misd_count_cat', 'juv_other_count_cat')] =====
+----Processing edge addition of:  age_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -342.97602320547776
+Delta structure score wihout fairness:  -342.97602320547776
+----Processing edge addition of:  race_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -119.69693240340484
+Delta structure score wihout fairness:  -119.69693240340484
+----Processing edge addition of:  age_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -2.6812887918753177
+Delta structure score wihout fairness:  -2.6812887918753177
+----Processing edge addition of:  two_year_recid and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -14.06989955623385
+Delta structure score wihout fairness:  -14.06989955623385
+----Processing edge addition of:  juv_fel_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -85.47280204337858
+Delta structure score wihout fairness:  -85.47280204337858
+----Processing edge addition of:  c_charge_degree and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -171.18676194215595
+Delta structure score wihout fairness:  -171.18676194215595
+----Processing edge addition of:  juv_other_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -380.41523386957033
+Delta structure score wihout fairness:  -380.41523386957033
+----Processing edge addition of:  juv_other_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -46.93110898377165
+Delta structure score wihout fairness:  -46.93110898377165
+----Processing edge addition of:  race_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -167.66762879324506
+Delta structure score wihout fairness:  -167.66762879324506
+----Processing edge addition of:  sex and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -160.92424728790775
+Delta structure score wihout fairness:  -160.92424728790775
+----Processing edge addition of:  c_charge_degree and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -79.80972599068764
+Delta structure score wihout fairness:  -79.80972599068764
+----Processing edge addition of:  sex and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -15.687088691211216
+Delta structure score wihout fairness:  -15.687088691211216
+----Processing edge addition of:  c_days_from_compas_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -184.04030383680686
+Delta structure score wihout fairness:  -184.04030383680686
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -698.7251842432775
+Delta structure score wihout fairness:  -698.7251842432775
+----Processing edge addition of:  juv_misd_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -389.9642433994168
+Delta structure score wihout fairness:  -389.9642433994168
+----Processing edge addition of:  c_days_from_compas_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -1228.8391995594325
+Delta structure score wihout fairness:  -1228.8391995594325
+----Processing edge addition of:  juv_fel_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -24.695414937758414
+Delta structure score wihout fairness:  -24.695414937758414
+----Processing edge addition of:  juv_misd_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.26843388967063
+Delta structure score wihout fairness:  -262.26843388967063
+----Processing edge addition of:  juv_other_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -154.97968542448734
+Delta structure score wihout fairness:  -154.97968542448734
+----Processing edge addition of:  sex and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -64.21418143463961
+Delta structure score wihout fairness:  -64.21418143463961
+----Processing edge addition of:  sex and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -52.49273273392919
+Delta structure score wihout fairness:  -52.49273273392919
+----Processing edge addition of:  c_days_from_compas_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -570.9824328802429
+Delta structure score wihout fairness:  -570.9824328802429
+----Processing edge addition of:  two_year_recid and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -172.73061595592208
+Delta structure score wihout fairness:  -172.73061595592208
+----Processing edge addition of:  two_year_recid and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -22.827647828203112
+Delta structure score wihout fairness:  -22.827647828203112
+----Processing edge addition of:  race_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -18.77342153513746
+Delta structure score wihout fairness:  -18.77342153513746
+----Processing edge addition of:  two_year_recid and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -175.94338060042992
+Delta structure score wihout fairness:  -175.94338060042992
+----Processing edge addition of:  juv_other_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -43.24514050265543
+Delta structure score wihout fairness:  -43.24514050265543
+----Processing edge addition of:  days_b_screening_arrest_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -103.69283583472998
+Delta structure score wihout fairness:  -103.69283583472998
+----Processing edge addition of:  priors_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -363.233605612307
+Delta structure score wihout fairness:  -363.233605612307
+----Processing edge addition of:  juv_fel_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -114.75934125710546
+Delta structure score wihout fairness:  -114.75934125710546
+----Processing edge addition of:  c_days_from_compas_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -153.17705866486494
+Delta structure score wihout fairness:  -153.17705866486494
+----Processing edge addition of:  juv_misd_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -53.26865256997007
+Delta structure score wihout fairness:  -53.26865256997007
+----Processing edge addition of:  race_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -138.96013466370368
+Delta structure score wihout fairness:  -138.96013466370368
+----Processing edge addition of:  race_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -17.97330786384589
+Delta structure score wihout fairness:  -17.97330786384589
+----Processing edge addition of:  c_charge_degree and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -94.22781366556546
+Delta structure score wihout fairness:  -94.22781366556546
+----Processing edge addition of:  juv_fel_count_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -48.75460916435327
+Delta structure score wihout fairness:  -48.75460916435327
+----Processing edge addition of:  c_charge_degree and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -24.695414937758642
+Delta structure score wihout fairness:  -24.695414937758642
+----Processing edge addition of:  age_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -250.6878174202484
+Delta structure score wihout fairness:  -250.6878174202484
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -98.01503272267121
+Delta structure score wihout fairness:  -98.01503272267121
+----Processing edge addition of:  two_year_recid and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -14.284954177665895
+Delta structure score wihout fairness:  -14.284954177665895
+----Processing edge addition of:  c_charge_degree and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -68.36489046935435
+Delta structure score wihout fairness:  -68.36489046935435
+----Processing edge addition of:  juv_other_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -262.90933147999294
+Delta structure score wihout fairness:  -262.90933147999294
+----Processing edge addition of:  race_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -77.00570141477374
+Delta structure score wihout fairness:  -77.00570141477374
+----Processing edge addition of:  race_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -60.42478189375743
+Delta structure score wihout fairness:  -60.42478189375743
+----Processing edge addition of:  sex and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -122.81581003174142
+Delta structure score wihout fairness:  -122.81581003174142
+----Processing edge addition of:  juv_fel_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -15.687088691210647
+Delta structure score wihout fairness:  -15.687088691210647
+----Processing edge addition of:  days_b_screening_arrest_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -302.2137067634726
+Delta structure score wihout fairness:  -302.2137067634726
+----Processing edge addition of:  days_b_screening_arrest_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -278.4095858266553
+Delta structure score wihout fairness:  -278.4095858266553
+----Processing edge addition of:  juv_misd_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score with fairness:  -38.67870014765924
+Delta structure score wihout fairness:  -38.67870014765924
+----Processing edge addition of:  sex and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -166.49214006280408
+Delta structure score wihout fairness:  -166.49214006280408
+----Processing edge addition of:  c_days_from_compas_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -505.7137115897365
+Delta structure score wihout fairness:  -505.7137115897365
+----Processing edge addition of:  c_charge_degree and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -10.72524776684213
+Delta structure score wihout fairness:  -10.72524776684213
+----Processing edge addition of:  age_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -51.33156243137864
+Delta structure score wihout fairness:  -51.33156243137864
+----Processing edge addition of:  race_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -19.14178783269108
+Delta structure score wihout fairness:  -19.14178783269108
+----Processing edge addition of:  priors_count_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -747.8847514700342
+Delta structure score wihout fairness:  -747.8847514700342
+----Processing edge addition of:  two_year_recid and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score with fairness:  -89.31725511729519
+Delta structure score wihout fairness:  -89.31725511729519
+----Processing edge addition of:  days_b_screening_arrest_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -77.84614585082
+Delta structure score wihout fairness:  -77.84614585082
+----Processing edge addition of:  juv_misd_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score with fairness:  -175.94338060043037
+Delta structure score wihout fairness:  -175.94338060043037
+----Processing edge addition of:  age_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -0.8305509187503048
+Delta structure score wihout fairness:  -0.8305509187503048
+----Processing edge addition of:  c_days_from_compas_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score with fairness:  -160.92424728790684
+Delta structure score wihout fairness:  -160.92424728790684
+----Processing edge addition of:  two_year_recid and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score with fairness:  -39.36901044274077
+Delta structure score wihout fairness:  -39.36901044274077
+----Processing edge addition of:  juv_fel_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -184.04030383680674
+Delta structure score wihout fairness:  -184.04030383680674
+----Processing edge addition of:  juv_other_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -49.07798414824492
+Delta structure score wihout fairness:  -49.07798414824492
+----Processing edge addition of:  sex and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -10.725247766842585
+Delta structure score wihout fairness:  -10.725247766842585
+----Processing edge addition of:  juv_fel_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score with fairness:  -163.24382562439678
+Delta structure score wihout fairness:  -163.24382562439678
+----Processing edge addition of:  c_charge_degree and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score with fairness:  -153.1770586648654
+Delta structure score wihout fairness:  -153.1770586648654
+----Processing edge addition of:  juv_misd_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score with fairness:  -55.61065777977092
+Delta structure score wihout fairness:  -55.61065777977092
+----Processing edge removal of:  race_cat and age_cat ----
+Old structure score before fairness:  -5977.411337430467
+Delta structure score:  -74.09325001499292
+Delta structure score wihout fairness:  -74.09325001499292
+----Processing edge removal of:  age_cat and priors_count_cat ----
+Old structure score before fairness:  -10468.611131705034
+Delta structure score:  -160.470896167717
+Delta structure score wihout fairness:  -160.470896167717
+----Processing edge removal of:  age_cat and juv_other_count_cat ----
+Old structure score before fairness:  -1744.315570197193
+Delta structure score:  -79.97061229888209
+Delta structure score wihout fairness:  -79.97061229888209
+----Processing edge removal of:  priors_count_cat and two_year_recid ----
+Old structure score before fairness:  -3847.081078149969
+Delta structure score:  -340.09881993108274
+Delta structure score wihout fairness:  -340.09881993108274
+----Processing edge removal of:  priors_count_cat and c_days_from_compas_cat ----
+Old structure score before fairness:  -6414.524896192789
+Delta structure score:  -77.59698001271772
+Delta structure score wihout fairness:  -77.59698001271772
+----Processing edge removal of:  priors_count_cat and juv_misd_count_cat ----
+Old structure score before fairness:  -1319.6620442065887
+Delta structure score:  -181.93354508141397
+Delta structure score wihout fairness:  -181.93354508141397
+----Processing edge removal of:  priors_count_cat and juv_fel_count_cat ----
+Old structure score before fairness:  -799.1846612248165
+Delta structure score:  -114.80426594550772
+Delta structure score wihout fairness:  -114.80426594550772
+----Processing edge removal of:  priors_count_cat and c_charge_degree ----
+Old structure score before fairness:  -3950.4557618944523
+Delta structure score:  -75.20426665883133
+Delta structure score wihout fairness:  -75.20426665883133
+----Processing edge removal of:  priors_count_cat and sex ----
+Old structure score before fairness:  -2973.5510679100266
+Delta structure score:  -35.142150897651845
+Delta structure score wihout fairness:  -35.142150897651845
+----Processing edge removal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Old structure score before fairness:  -2866.328464011923
+Delta structure score:  -3222.103578774046
+Delta structure score wihout fairness:  -3222.103578774046
+----Processing edge reversal of:  race_cat and age_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  9.094947017729282e-13
+----Processing edge reversal of:  age_cat and priors_count_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  -1.8189894035458565e-12
+----Processing edge reversal of:  priors_count_cat and two_year_recid ----
+Delta structure score:  -80.23431196452475
+Delta structure score wihout fairness:  -80.2343119645252
+----Processing edge reversal of:  priors_count_cat and c_days_from_compas_cat ----
+Delta structure score:  -830.8896921625383
+Delta structure score wihout fairness:  -830.8896921625392
+----Processing edge reversal of:  priors_count_cat and juv_misd_count_cat ----
+Delta structure score:  -167.7476686009868
+Delta structure score wihout fairness:  -167.7476686009868
+----Processing edge reversal of:  priors_count_cat and juv_fel_count_cat ----
+Delta structure score:  -101.31085966051432
+Delta structure score wihout fairness:  -101.31085966051512
+----Processing edge reversal of:  priors_count_cat and c_charge_degree ----
+Delta structure score:  -101.20881620137334
+Delta structure score wihout fairness:  -101.20881620137379
+----Processing edge reversal of:  c_days_from_compas_cat and days_b_screening_arrest_cat ----
+Delta structure score:  -764.9680863164122
+Delta structure score wihout fairness:  -764.9680863164117
+----Processing edge reversal of:  juv_misd_count_cat and juv_other_count_cat ----
+Delta structure score:  -357.31230962617883
+Delta structure score wihout fairness:  -357.3123096261786
+d.add_edge('race_cat', 'age_cat')
+d.add_edge('race_cat', 'priors_count_cat')
+d.add_edge('age_cat', 'priors_count_cat')
+d.add_edge('age_cat', 'juv_other_count_cat')
+d.add_edge('age_cat', 'two_year_recid')
+d.add_edge('age_cat', 'juv_misd_count_cat')
+d.add_edge('priors_count_cat', 'two_year_recid')
+d.add_edge('priors_count_cat', 'c_days_from_compas_cat')
+d.add_edge('priors_count_cat', 'juv_misd_count_cat')
+d.add_edge('priors_count_cat', 'juv_fel_count_cat')
+d.add_edge('priors_count_cat', 'c_charge_degree')
+d.add_edge('priors_count_cat', 'sex')
+d.add_edge('c_days_from_compas_cat', 'days_b_screening_arrest_cat')
+d.add_edge('juv_misd_count_cat', 'juv_other_count_cat')

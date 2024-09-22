@@ -1,0 +1,2141 @@
+=====Model edges:  [('race', 'lsat_bin'), ('race', 'fam_inc'), ('lsat_bin', 'ugpa_bin'), ('lsat_bin', 'admit'), ('ugpa_bin', 'male')] =====
+fairness_score_baseline:  0.05983619077062935
+----Processing edge addition of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -33396.56845307015
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05975344709873743
+Old structure score after fairness:  197831.43271269163
+New structure score before fairness:  -33542.18195908993
+New structure score after fairness:  197799.43972792896
+Delta structure score with fairness:  -31.992984762677224
+Delta structure score wihout fairness:  -145.61350601978484
+----Processing edge addition of:  ugpa_bin and admit ----
+Old structure score before fairness:  -950.862702896552
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05527329231175225
+Old structure score after fairness:  230277.13846286523
+New structure score before fairness:  -964.9378593627678
+New structure score after fairness:  236775.93907285444
+Delta structure score with fairness:  6498.800609989208
+Delta structure score wihout fairness:  -14.07515646621573
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -950.862702896552
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.0595267949866243
+Old structure score after fairness:  230277.13846286523
+New structure score before fairness:  -1125.5360143371913
+New structure score after fairness:  230528.12350382522
+Delta structure score with fairness:  250.98504095998942
+Delta structure score wihout fairness:  -174.67331144063928
+----Processing edge addition of:  lsat_bin and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05398806328487918
+Old structure score after fairness:  217305.27318278787
+New structure score before fairness:  -14141.47881346208
+New structure score after fairness:  225531.14154062184
+Delta structure score with fairness:  8225.86835783397
+Delta structure score wihout fairness:  -218.7508304881576
+----Processing edge addition of:  lsat_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.056483092008274
+Old structure score after fairness:  206157.94639727494
+New structure score before fairness:  -25215.668274506632
+New structure score after fairness:  210747.44688398423
+Delta structure score with fairness:  4589.500486709294
+Delta structure score wihout fairness:  -145.6135060197921
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -950.862702896552
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06660424624167438
+Old structure score after fairness:  230277.13846286523
+New structure score before fairness:  -985.8068710513854
+New structure score after fairness:  221443.6932981542
+Delta structure score with fairness:  -8833.44516471104
+Delta structure score wihout fairness:  -34.94416815483339
+----Processing edge addition of:  admit and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.052471127443345804
+Old structure score after fairness:  192864.31842540295
+New structure score before fairness:  -38377.75789682506
+New structure score after fairness:  203634.9328205102
+Delta structure score with fairness:  10770.614395107259
+Delta structure score wihout fairness:  -14.07515646621323
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.04964749441528682
+Old structure score after fairness:  192864.31842540295
+New structure score before fairness:  -39769.45452391608
+New structure score after fairness:  206785.05175688025
+Delta structure score with fairness:  13920.733331477299
+Delta structure score wihout fairness:  -1405.771783557233
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -950.862702896552
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06645848014396202
+Old structure score after fairness:  230277.13846286523
+New structure score before fairness:  -993.9174710737063
+New structure score after fairness:  221615.47631467952
+Delta structure score with fairness:  -8661.662148185715
+Delta structure score wihout fairness:  -43.0547681771543
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.058648441721735944
+Old structure score after fairness:  206157.94639727494
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  207790.11491263434
+Delta structure score with fairness:  1632.1685153594008
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06348383510448498
+Old structure score after fairness:  192864.31842540295
+New structure score before fairness:  -38534.348964549834
+New structure score after fairness:  187834.9413957974
+Delta structure score with fairness:  -5029.377029605559
+Delta structure score wihout fairness:  -170.66622419098712
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05858584271255543
+Old structure score after fairness:  206157.94639727494
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  207610.99558781052
+Delta structure score with fairness:  1453.0491905355884
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06756728009726123
+Old structure score after fairness:  217305.27318278787
+New structure score before fairness:  -13935.93137961277
+New structure score after fairness:  207314.86651325555
+Delta structure score with fairness:  -9990.406669532327
+Delta structure score wihout fairness:  -13.203396638848062
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05989710960210848
+Old structure score after fairness:  217305.27318278787
+New structure score before fairness:  -14061.26217982289
+New structure score after fairness:  217083.18789645712
+Delta structure score with fairness:  -222.08528633075184
+Delta structure score wihout fairness:  -138.53419684896835
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05760372142127081
+Old structure score after fairness:  206157.94639727494
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  209274.86860059074
+Delta structure score with fairness:  3116.9222033158003
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05920377495764372
+Old structure score after fairness:  217305.27318278787
+New structure score before fairness:  -13837.470237454414
+New structure score after fairness:  218262.95870142063
+Delta structure score with fairness:  957.6855186327593
+Delta structure score wihout fairness:  85.25774551950781
+----Processing edge removal of:  race and lsat_bin ----
+Old structure score before fairness:  -33396.56845307015
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.013627711183155297
+Old structure score after fairness:  197831.43271269163
+New structure score before fairness:  318211.56232775265
+New structure score after fairness:  318211.56232775265
+Delta structure score:  120380.12961506101
+Delta structure score wihout fairness:  -1099.0971454626997
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06602489800518443
+Old structure score after fairness:  206157.94639727494
+New structure score before fairness:  197676.9221558646
+New structure score after fairness:  197676.9221558646
+Delta structure score:  -8481.024241410341
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  lsat_bin and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06185877140209045
+Old structure score after fairness:  192864.31842540295
+New structure score before fairness:  189892.75146106858
+New structure score after fairness:  189892.75146106858
+Delta structure score:  -2971.5669643343717
+Delta structure score wihout fairness:  -242.03172177609667
+----Processing edge removal of:  lsat_bin and admit ----
+Old structure score before fairness:  -950.862702896552
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.08119799909359471
+Old structure score after fairness:  230277.13846286523
+New structure score before fairness:  200149.13916381574
+New structure score after fairness:  200149.13916381574
+Delta structure score:  -30127.999299049494
+Delta structure score wihout fairness:  -5062.074771515009
+----Processing edge removal of:  ugpa_bin and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06512443296761256
+Old structure score after fairness:  217305.27318278787
+New structure score before fairness:  210189.5135674417
+New structure score after fairness:  210189.5135674417
+Delta structure score:  -7115.759615346178
+Delta structure score wihout fairness:  -162.10547582763684
+----Processing edge reversal of:  race and lsat_bin ----
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.06184376673203929
+Old structure score after fairness:  188791.95145895198
+New structure score before fairness:  186082.33502280115
+New structure score after fairness:  186082.33502280115
+Delta structure score:  -2709.616436150827
+Delta structure score wihout fairness:  7.275957614183426e-12
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.059531632191911675
+Old structure score after fairness:  197118.4651435353
+New structure score before fairness:  197537.45159103395
+New structure score after fairness:  197537.45159103395
+Delta structure score:  418.986447498668
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  lsat_bin and ugpa_bin ----
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.0413480855547571
+Old structure score after fairness:  159467.7499723328
+New structure score before fairness:  189335.33799101994
+New structure score after fairness:  189335.33799101994
+Delta structure score:  29867.58801868715
+Delta structure score wihout fairness:  -478.2604499278241
+----Processing edge reversal of:  lsat_bin and admit ----
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.012677761168008048
+Old structure score after fairness:  196880.57000979508
+New structure score before fairness:  324187.1237296843
+New structure score after fairness:  324187.1237296843
+Delta structure score:  127306.5537198892
+Delta structure score wihout fairness:  -105.46353974824615
+----Processing edge reversal of:  ugpa_bin and male ----
+fairness_score_baseline:  0.05983619077062935
+fairness_score_new:  0.05902173351970757
+Old structure score after fairness:  178941.590442429
+New structure score before fairness:  179823.10572994215
+New structure score after fairness:  179823.10572994215
+Delta structure score:  881.5152875131462
+Delta structure score wihout fairness:  -243.7694263970534
+=====Model edges:  [('race', 'lsat_bin'), ('race', 'fam_inc'), ('lsat_bin', 'ugpa_bin'), ('admit', 'lsat_bin'), ('ugpa_bin', 'male')] =====
+fairness_score_baseline:  0.005901500208516028
+----Processing edge addition of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.002809261201399141
+Old structure score after fairness:  392983.3504334946
+New structure score before fairness:  -28927.809882856895
+New structure score after fairness:  453443.03948618064
+Delta structure score with fairness:  60459.68905268604
+Delta structure score wihout fairness:  -487.852661553512
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.006084057033369006
+Old structure score after fairness:  415410.3701803864
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  412930.05325404915
+Delta structure score with fairness:  -2480.3169263372547
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  lsat_bin and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.0021625007404002528
+Old structure score after fairness:  407500.57967182406
+New structure score before fairness:  -14141.47881346208
+New structure score after fairness:  489713.4401997174
+Delta structure score with fairness:  82212.86052789335
+Delta structure score wihout fairness:  -218.7508304881576
+----Processing edge addition of:  lsat_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.004587183888838622
+Old structure score after fairness:  396353.25288631115
+New structure score before fairness:  -25215.668274506632
+New structure score after fairness:  416893.95248814335
+Delta structure score with fairness:  20540.699601832195
+Delta structure score wihout fairness:  -145.6135060197921
+----Processing edge addition of:  admit and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.0004890641061818801
+Old structure score after fairness:  383059.6249144391
+New structure score before fairness:  -38377.75789682506
+New structure score after fairness:  587532.9203458965
+Delta structure score with fairness:  204473.2954314574
+Delta structure score wihout fairness:  -14.07515646621323
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.01015105810938631
+Old structure score after fairness:  383059.6249144391
+New structure score before fairness:  -39769.45452391608
+New structure score after fairness:  337120.8258271045
+Delta structure score with fairness:  -45938.7990873346
+Delta structure score wihout fairness:  -1405.771783557233
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.051366533195747334
+Old structure score after fairness:  415410.3701803864
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  237809.10903221802
+Delta structure score with fairness:  -177601.26114816839
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.05628164506018659
+Old structure score after fairness:  412383.8264010583
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  227279.40430760913
+Delta structure score with fairness:  -185104.42209344916
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.00462418897744328
+Old structure score after fairness:  396353.25288631115
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  416365.7835081043
+Delta structure score with fairness:  20012.53062179312
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.004977735660058394
+Old structure score after fairness:  383059.6249144391
+New structure score before fairness:  -38534.348964549834
+New structure score after fairness:  396866.32589742314
+Delta structure score with fairness:  13806.700982984039
+Delta structure score wihout fairness:  -170.66622419098712
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.004294573132515744
+Old structure score after fairness:  396353.25288631115
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  422170.7695932916
+Delta structure score with fairness:  25817.516706980474
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.005711604762420622
+Old structure score after fairness:  407500.57967182406
+New structure score before fairness:  -13935.93137961277
+New structure score after fairness:  410172.8467360756
+Delta structure score with fairness:  2672.2670642515295
+Delta structure score wihout fairness:  -13.203396638848062
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.0024061106387352343
+Old structure score after fairness:  407500.57967182406
+New structure score before fairness:  -14061.26217982289
+New structure score after fairness:  481028.93173136236
+Delta structure score with fairness:  73528.3520595383
+Delta structure score wihout fairness:  -138.53419684896835
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.0004145182692320698
+Old structure score after fairness:  396353.25288631115
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  614414.2480436744
+Delta structure score with fairness:  218060.99515736324
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.0032651501996874416
+Old structure score after fairness:  407500.57967182406
+New structure score before fairness:  -13837.470237454414
+New structure score after fairness:  456185.6304863676
+Delta structure score with fairness:  48685.05081454356
+Delta structure score wihout fairness:  85.25774551950781
+----Processing edge removal of:  race and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.00957366575365462
+Old structure score after fairness:  392983.3504334946
+New structure score before fairness:  352265.07923699275
+New structure score after fairness:  352265.07923699275
+Delta structure score:  -40718.27119650185
+Delta structure score wihout fairness:  -993.6336057144508
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.0031575337751426763
+Old structure score after fairness:  396353.25288631115
+New structure score before fairness:  447305.00074050325
+New structure score after fairness:  447305.00074050325
+Delta structure score:  50951.7478541921
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  lsat_bin and ugpa_bin ----
+Old structure score before fairness:  -38363.68274035885
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.007778560482957511
+Old structure score after fairness:  383059.6249144391
+New structure score before fairness:  360142.26184467884
+New structure score after fairness:  360142.26184467884
+Delta structure score:  -22917.363069760264
+Delta structure score wihout fairness:  -242.03172177609667
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.22122311461544386
+Old structure score after fairness:  392983.3504334946
+New structure score before fairness:  90470.20707080283
+New structure score after fairness:  90470.20707080283
+Delta structure score:  -302513.14336269174
+Delta structure score wihout fairness:  -4956.611231766765
+----Processing edge removal of:  ugpa_bin and male ----
+Old structure score before fairness:  -13922.727982973922
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.002101398582726788
+Old structure score after fairness:  407500.57967182406
+New structure score before fairness:  492123.4804354076
+New structure score after fairness:  492123.4804354076
+Delta structure score:  84622.90076358354
+Delta structure score wihout fairness:  -162.10547582763684
+----Processing edge reversal of:  race and lsat_bin ----
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.058094497948807174
+Old structure score after fairness:  383943.8691797549
+New structure score before fairness:  196279.47315254694
+New structure score after fairness:  196279.47315254694
+Delta structure score:  -187664.396027208
+Delta structure score wihout fairness:  105.46353974825251
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.009035307331786216
+Old structure score after fairness:  387313.7716325715
+New structure score before fairness:  352341.236299999
+New structure score after fairness:  352341.236299999
+Delta structure score:  -34972.53533257247
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  lsat_bin and ugpa_bin ----
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.008474523778578033
+Old structure score after fairness:  354619.66769313574
+New structure score before fairness:  323720.9997542812
+New structure score after fairness:  323720.9997542812
+Delta structure score:  -30898.667938854545
+Delta structure score wihout fairness:  -1187.2420187033204
+----Processing edge reversal of:  ugpa_bin and male ----
+fairness_score_baseline:  0.005901500208516028
+fairness_score_new:  0.00017338175405130773
+Old structure score after fairness:  369136.8969314652
+New structure score before fairness:  658526.3087897361
+New structure score after fairness:  658526.3087897361
+Delta structure score:  289389.41185827093
+Delta structure score wihout fairness:  -243.7694263970534
+=====Model edges:  [('race', 'lsat_bin'), ('race', 'fam_inc'), ('lsat_bin', 'ugpa_bin'), ('admit', 'lsat_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.014148626239044684
+----Processing edge addition of:  male and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0069795240318753365
+Old structure score after fairness:  340587.6927279827
+New structure score before fairness:  -8989.064309613832
+New structure score after fairness:  398658.6448366154
+Delta structure score with fairness:  58070.952108632715
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge addition of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0006337965575041737
+Old structure score after fairness:  321187.216760419
+New structure score before fairness:  -28927.809882856895
+New structure score after fairness:  575697.6470953652
+Delta structure score with fairness:  254510.4303349462
+Delta structure score wihout fairness:  -487.852661553512
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0013142614755737858
+Old structure score after fairness:  343614.2365073108
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  538752.0943346359
+Delta structure score with fairness:  195137.85782732506
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  lsat_bin and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0038818342861248883
+Old structure score after fairness:  335542.34052292083
+New structure score before fairness:  -14059.814862892656
+New structure score after fairness:  441758.43506339676
+Delta structure score with fairness:  106216.09454047593
+Delta structure score wihout fairness:  25.01859590890308
+----Processing edge addition of:  lsat_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.009765341706583011
+Old structure score after fairness:  324557.11921323556
+New structure score before fairness:  -25215.668274506632
+New structure score after fairness:  354855.34384980955
+Delta structure score with fairness:  30298.224636573985
+Delta structure score wihout fairness:  -145.6135060197921
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0015800417196213945
+Old structure score after fairness:  343614.2365073108
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  523613.91140606336
+Delta structure score with fairness:  179999.67489875254
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  admit and ugpa_bin ----
+Old structure score before fairness:  -38445.346690928265
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.00020650667998300953
+Old structure score after fairness:  311181.8272907941
+New structure score before fairness:  -38869.052418335086
+New structure score after fairness:  657831.9261788267
+Delta structure score with fairness:  346650.0988880326
+Delta structure score wihout fairness:  -423.7057274068211
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38445.346690928265
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0043119358429054705
+Old structure score after fairness:  311181.8272907941
+New structure score before fairness:  -41326.70584105901
+New structure score after fairness:  405863.7045238841
+Delta structure score with fairness:  94681.87723309
+Delta structure score wihout fairness:  -2881.3591501307455
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.05478274438202089
+Old structure score after fairness:  343614.2365073108
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  232522.30582776156
+Delta structure score with fairness:  -111091.93067954926
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.05847479347317424
+Old structure score after fairness:  340587.6927279827
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  224140.63561250566
+Delta structure score with fairness:  -116447.05711547704
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0020073023708092885
+Old structure score after fairness:  324557.11921323556
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  484885.67169954954
+Delta structure score with fairness:  160328.55248631397
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38445.346690928265
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0016100842391884307
+Old structure score after fairness:  311181.8272907941
+New structure score before fairness:  -38954.00856731381
+New structure score after fairness:  489121.02992873965
+Delta structure score with fairness:  177939.20263794553
+Delta structure score wihout fairness:  -508.661876385544
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0039494763823432755
+Old structure score after fairness:  324557.11921323556
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  429048.8873497605
+Delta structure score with fairness:  104491.76813652494
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0032022441565879856
+Old structure score after fairness:  335542.34052292083
+New structure score before fairness:  -14079.547665685257
+New structure score after fairness:  457540.8740183544
+Delta structure score with fairness:  121998.53349543357
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0010285836986195923
+Old structure score after fairness:  335542.34052292083
+New structure score before fairness:  -14074.819310772918
+New structure score after fairness:  550793.1172918917
+Delta structure score with fairness:  215250.77676897089
+Delta structure score wihout fairness:  10.014148028640193
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0002343584287304995
+Old structure score after fairness:  321187.216760419
+New structure score before fairness:  -28547.975300162554
+New structure score after fairness:  657764.7870190033
+Delta structure score with fairness:  336577.5702585843
+Delta structure score wihout fairness:  -108.01807885917151
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.002224925805276917
+Old structure score after fairness:  324557.11921323556
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  476443.10143918503
+Delta structure score with fairness:  151885.98222594947
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.004191249507989367
+Old structure score after fairness:  335542.34052292083
+New structure score before fairness:  -14034.41651467573
+New structure score after fairness:  435486.88013515336
+Delta structure score with fairness:  99944.53961223253
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge removal of:  race and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.007942586733262896
+Old structure score after fairness:  321187.216760419
+New structure score before fairness:  367600.979212502
+New structure score after fairness:  367600.979212502
+Delta structure score:  46413.762452083
+Delta structure score wihout fairness:  -993.6336057144508
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.006538783337860704
+Old structure score after fairness:  324557.11921323556
+New structure score before fairness:  387533.6740161486
+New structure score after fairness:  387533.6740161486
+Delta structure score:  62976.554802913044
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  lsat_bin and ugpa_bin ----
+Old structure score before fairness:  -38445.346690928265
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0019311098077090805
+Old structure score after fairness:  311181.8272907941
+New structure score before fairness:  474703.5080754369
+New structure score after fairness:  474703.5080754369
+Delta structure score:  163521.6807846428
+Delta structure score wihout fairness:  1.7377046209585387
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.1469146821635192
+Old structure score after fairness:  321187.216760419
+New structure score before fairness:  124078.63193804765
+New structure score after fairness:  124078.63193804765
+Delta structure score:  -197108.58482237137
+Delta structure score wihout fairness:  -4956.611231766765
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38445.346690928265
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.011312175326636531
+Old structure score after fairness:  311181.8272907941
+New structure score before fairness:  329634.16483569867
+New structure score after fairness:  329634.16483569867
+Delta structure score:  18452.337544904556
+Delta structure score wihout fairness:  81.66395056941838
+----Processing edge reversal of:  race and lsat_bin ----
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.06197684650811972
+Old structure score after fairness:  312147.73550667934
+New structure score before fairness:  190967.91384302205
+New structure score after fairness:  190967.91384302205
+Delta structure score:  -121179.82166365729
+Delta structure score wihout fairness:  105.46353974825251
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.0033351147483962618
+Old structure score after fairness:  315517.6379594959
+New structure score before fairness:  434172.76659968804
+New structure score after fairness:  434172.76659968804
+Delta structure score:  118655.12864019215
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  lsat_bin and ugpa_bin ----
+fairness_score_baseline:  0.014148626239044684
+fairness_score_new:  0.00979628479628479
+Old structure score after fairness:  282741.87006949075
+New structure score before fairness:  311982.47426221083
+New structure score after fairness:  311982.47426221083
+Delta structure score:  29240.604192720086
+Delta structure score wihout fairness:  -943.4725923062724
+=====Model edges:  [('race', 'lsat_bin'), ('race', 'fam_inc'), ('lsat_bin', 'ugpa_bin'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.010705920394936716
+----Processing edge addition of:  male and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0018139099707917827
+Old structure score after fairness:  363481.0976243428
+New structure score before fairness:  -8989.064309613832
+New structure score after fairness:  509298.84672698507
+Delta structure score with fairness:  145817.7491026423
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge addition of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0031022885170449155
+Old structure score after fairness:  344080.6216567791
+New structure score before fairness:  -28927.809882856895
+New structure score after fairness:  445296.4036603494
+Delta structure score with fairness:  101215.78200357029
+Delta structure score wihout fairness:  -487.852661553512
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.017226850303189017
+Old structure score after fairness:  366507.6414036709
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  327472.2535945914
+Delta structure score with fairness:  -39035.38780907949
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  lsat_bin and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0011965174459901001
+Old structure score after fairness:  358435.7454192809
+New structure score before fairness:  -14059.814862892656
+New structure score after fairness:  538390.7315939585
+Delta structure score with fairness:  179954.98617467756
+Delta structure score wihout fairness:  25.01859590890308
+----Processing edge addition of:  lsat_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0026242875661475623
+Old structure score after fairness:  347450.52410959563
+New structure score before fairness:  -25215.668274506632
+New structure score after fairness:  462747.7273724856
+Delta structure score with fairness:  115297.20326288999
+Delta structure score wihout fairness:  -145.6135060197921
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.00507541431737156
+Old structure score after fairness:  366507.6414036709
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  427797.4135241424
+Delta structure score with fairness:  61289.77212047152
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.001284376756779046
+Old structure score after fairness:  333651.52645974734
+New structure score before fairness:  -44955.254963587984
+New structure score after fairness:  501677.2518419118
+Delta structure score with fairness:  168025.72538216447
+Delta structure score wihout fairness:  -6086.202545252898
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.058062156805867134
+Old structure score after fairness:  366507.6414036709
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  227748.64154596996
+Delta structure score with fairness:  -138758.99985770092
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.05986685380372121
+Old structure score after fairness:  363481.0976243428
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  222208.86324766173
+Delta structure score with fairness:  -141272.23437668104
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.012599651466847522
+Old structure score after fairness:  347450.52410959563
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  334063.3392135406
+Delta structure score with fairness:  -13387.184896055027
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.005068293543952912
+Old structure score after fairness:  333651.52645974734
+New structure score before fairness:  -40176.92600349731
+New structure score after fairness:  393743.41708018596
+Delta structure score with fairness:  60091.890620438615
+Delta structure score wihout fairness:  -1307.873585162226
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.01442086537651939
+Old structure score after fairness:  347450.52410959563
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  322711.3803358424
+Delta structure score with fairness:  -24739.143773753254
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.005524080198630571
+Old structure score after fairness:  358435.7454192809
+New structure score before fairness:  -14079.547665685257
+New structure score after fairness:  412770.26437157707
+Delta structure score with fairness:  54334.518952296174
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0023876658909387782
+Old structure score after fairness:  358435.7454192809
+New structure score before fairness:  -14074.819310772918
+New structure score after fairness:  481647.2225041729
+Delta structure score with fairness:  123211.47708489199
+Delta structure score wihout fairness:  10.014148028640193
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0038127151818941607
+Old structure score after fairness:  344080.6216567791
+New structure score before fairness:  -28547.975300162554
+New structure score after fairness:  428745.44457324635
+Delta structure score with fairness:  84664.82291646727
+Delta structure score wihout fairness:  -108.01807885917151
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.005252186504006856
+Old structure score after fairness:  347450.52410959563
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  405918.82436791796
+Delta structure score with fairness:  58468.30025832233
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.007469487123922758
+Old structure score after fairness:  358435.7454192809
+New structure score before fairness:  -14034.41651467573
+New structure score after fairness:  388042.62491579604
+Delta structure score with fairness:  29606.879496515146
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge removal of:  race and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0011267436597865998
+Old structure score after fairness:  344080.6216567791
+New structure score before fairness:  527950.2878324321
+New structure score after fairness:  527950.2878324321
+Delta structure score:  183869.666175653
+Delta structure score wihout fairness:  -993.6336057144508
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.010520003761743169
+Old structure score after fairness:  347450.52410959563
+New structure score before fairness:  348489.0660946265
+New structure score after fairness:  348489.0660946265
+Delta structure score:  1038.541985030868
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  lsat_bin and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.004221907211755124
+Old structure score after fairness:  333651.52645974734
+New structure score before fairness:  410829.9907664574
+New structure score after fairness:  410829.9907664574
+Delta structure score:  77178.46430671006
+Delta structure score wihout fairness:  776.1554239909528
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -28439.957221303383
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0052680054573037306
+Old structure score after fairness:  344080.6216567791
+New structure score before fairness:  397350.49437221314
+New structure score after fairness:  397350.49437221314
+Delta structure score:  53269.87271543406
+Delta structure score wihout fairness:  -4956.611231766765
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.00628653249027282
+Old structure score after fairness:  333651.52645974734
+New structure score before fairness:  377856.07339365047
+New structure score after fairness:  377856.07339365047
+Delta structure score:  44204.546933903126
+Delta structure score wihout fairness:  491.29452151002624
+----Processing edge reversal of:  race and lsat_bin ----
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.057377189048659315
+Old structure score after fairness:  335041.1404030394
+New structure score before fairness:  197299.59433217475
+New structure score after fairness:  197299.59433217475
+Delta structure score:  -137741.54607086466
+Delta structure score wihout fairness:  105.46353974825251
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.0035035831589795563
+Old structure score after fairness:  338411.04285585595
+New structure score before fairness:  430126.55674377386
+New structure score after fairness:  430126.55674377386
+Delta structure score:  91715.51388791791
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  lsat_bin and ugpa_bin ----
+fairness_score_baseline:  0.010705920394936716
+fairness_score_new:  0.002523572204431515
+Old structure score after fairness:  305211.569238444
+New structure score before fairness:  423698.5469721738
+New structure score after fairness:  423698.5469721738
+Delta structure score:  118486.97773372981
+Delta structure score wihout fairness:  -169.0548729362854
+=====Model edges:  [('race', 'fam_inc'), ('lsat_bin', 'ugpa_bin'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.007596572757793726
+----Processing edge addition of:  male and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0010628366187283855
+Old structure score after fairness:  391652.3280979524
+New structure score before fairness:  -8989.064309613832
+New structure score after fairness:  553189.1305471131
+Delta structure score with fairness:  161536.80244916072
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge addition of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -29433.590827017833
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0015077263454764955
+Old structure score after fairness:  371258.21852467424
+New structure score before fairness:  -29465.502639435475
+New structure score after fairness:  504002.6943691742
+Delta structure score with fairness:  132744.47584449995
+Delta structure score wihout fairness:  -31.911812417642068
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.009496586086862373
+Old structure score after fairness:  394678.87187728053
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  376370.5937687168
+Delta structure score with fairness:  -18308.27810856374
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  ugpa_bin and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.027730763779870916
+Old structure score after fairness:  391652.3280979524
+New structure score before fairness:  -8731.887028002811
+New structure score after fairness:  285642.77181789733
+Delta structure score with fairness:  -106009.55628005508
+Delta structure score wihout fairness:  307.5942257368497
+----Processing edge addition of:  lsat_bin and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0023754335542055804
+Old structure score after fairness:  386606.97589289054
+New structure score before fairness:  -14059.814862892656
+New structure score after fairness:  482083.9586098265
+Delta structure score with fairness:  95476.98271693598
+Delta structure score wihout fairness:  25.01859590890308
+----Processing edge addition of:  lsat_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0008457773787777928
+Old structure score after fairness:  375621.7545832053
+New structure score before fairness:  -25215.668274506632
+New structure score after fairness:  555719.3182468395
+Delta structure score with fairness:  180097.56366363418
+Delta structure score wihout fairness:  -145.6135060197921
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0011792082610337234
+Old structure score after fairness:  394678.87187728053
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  547639.3693541515
+Delta structure score with fairness:  152960.497476871
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0026713201683724874
+Old structure score after fairness:  361822.756933357
+New structure score before fairness:  -44955.254963587984
+New structure score after fairness:  441549.628406766
+Delta structure score with fairness:  79726.871473409
+Delta structure score wihout fairness:  -6086.202545252898
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.04578761613742197
+Old structure score after fairness:  391652.3280979524
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  244222.78399599085
+Delta structure score with fairness:  -147429.54410196157
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.055677565366044346
+Old structure score after fairness:  394678.87187728053
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  231191.98964901792
+Delta structure score with fairness:  -163486.8822282626
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.008666129852636803
+Old structure score after fairness:  375621.7545832053
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  364791.9991512156
+Delta structure score with fairness:  -10829.755431989674
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.00741640622175066
+Old structure score after fairness:  361822.756933357
+New structure score before fairness:  -40176.92600349731
+New structure score after fairness:  362485.68796698045
+Delta structure score with fairness:  662.931033623463
+Delta structure score wihout fairness:  -1307.873585162226
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0016012864237382463
+Old structure score after fairness:  375621.7545832053
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  503173.9935120287
+Delta structure score with fairness:  127552.23892882344
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0012752320284492163
+Old structure score after fairness:  386606.97589289054
+New structure score before fairness:  -14079.547665685257
+New structure score after fairness:  533139.65703893
+Delta structure score with fairness:  146532.68114603945
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.001624750955271148
+Old structure score after fairness:  386606.97589289054
+New structure score before fairness:  -14074.819310772918
+New structure score after fairness:  513255.66009412706
+Delta structure score with fairness:  126648.68420123652
+Delta structure score wihout fairness:  10.014148028640193
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -29433.590827017833
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0011623253009756945
+Old structure score after fairness:  371258.21852467424
+New structure score before fairness:  -29448.802192380066
+New structure score after fairness:  525382.2720035157
+Delta structure score with fairness:  154124.0534788415
+Delta structure score wihout fairness:  -15.211365362232755
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0033569532912063604
+Old structure score after fairness:  375621.7545832053
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  442671.2406693815
+Delta structure score with fairness:  67049.48608617624
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge addition of:  lsat_bin and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.051049871634641475
+Old structure score after fairness:  391652.3280979524
+New structure score before fairness:  -7940.384108276956
+New structure score after fairness:  236326.99514253542
+Delta structure score with fairness:  -155325.332955417
+Delta structure score wihout fairness:  1099.0971454627052
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.003476865434778889
+Old structure score after fairness:  386606.97589289054
+New structure score before fairness:  -14034.41651467573
+New structure score after fairness:  450830.217406502
+Delta structure score with fairness:  64223.24151361146
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+The protected attribute is not in new DAG
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.007596572757793726
+Old structure score after fairness:  375621.7545832053
+New structure score before fairness:  375221.90140561253
+New structure score after fairness:  375221.90140561253
+Delta structure score:  -399.8531775927404
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  lsat_bin and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.00098637394323689
+Old structure score after fairness:  361822.756933357
+New structure score before fairness:  530215.5741517758
+New structure score after fairness:  530215.5741517758
+Delta structure score:  168392.81721841882
+Delta structure score wihout fairness:  776.1554239909528
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -29433.590827017833
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.003101082925968392
+Old structure score after fairness:  371258.21852467424
+New structure score before fairness:  439760.4624202991
+New structure score after fairness:  439760.4624202991
+Delta structure score:  68502.24389562488
+Delta structure score wihout fairness:  -5062.074771515014
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0053554049713388785
+Old structure score after fairness:  361822.756933357
+New structure score before fairness:  391018.2583395442
+New structure score after fairness:  391018.2583395442
+Delta structure score:  29195.50140618719
+Delta structure score wihout fairness:  491.29452151002624
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.009723977030151015
+Old structure score after fairness:  366582.2733294656
+New structure score before fairness:  346310.0132673184
+New structure score after fairness:  346310.0132673184
+Delta structure score:  -20272.260062147165
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  lsat_bin and ugpa_bin ----
+fairness_score_baseline:  0.007596572757793726
+fairness_score_new:  0.0021621273953985193
+Old structure score after fairness:  332389.1661063392
+New structure score before fairness:  436201.3633372097
+New structure score after fairness:  436201.3633372097
+Delta structure score:  103812.19723087049
+Delta structure score wihout fairness:  634.9108075824988
+=====Model edges:  [('race', 'fam_inc'), ('lsat_bin', 'ugpa_bin'), ('lsat_bin', 'fam_inc'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.001493452068303161
+----Processing edge addition of:  male and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.0008414020568242031
+Old structure score after fairness:  525209.769745304
+New structure score before fairness:  -8989.064309613832
+New structure score after fairness:  572371.7805795074
+Delta structure score with fairness:  47162.010834203335
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge addition of:  ugpa_bin and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.021927985823233798
+Old structure score after fairness:  525209.769745304
+New structure score before fairness:  -8731.887028002811
+New structure score after fairness:  304919.98051386635
+Delta structure score with fairness:  -220289.78923143767
+Delta structure score wihout fairness:  307.5942257368497
+----Processing edge addition of:  lsat_bin and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.0024173752373476687
+Old structure score after fairness:  520164.41754024214
+New structure score before fairness:  -14059.814862892656
+New structure score after fairness:  480646.8741026547
+Delta structure score with fairness:  -39517.54343758745
+Delta structure score wihout fairness:  25.01859590890308
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.007027152395955749
+Old structure score after fairness:  528236.3135246321
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  401081.6545046219
+Delta structure score with fairness:  -127154.65902001021
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.005089126326942167
+Old structure score after fairness:  495380.1985807086
+New structure score before fairness:  -44955.254963587984
+New structure score after fairness:  388628.2820087152
+Delta structure score with fairness:  -106751.91657199338
+Delta structure score wihout fairness:  -6086.202545252898
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.05661918673905683
+Old structure score after fairness:  525209.769745304
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  226788.4432703321
+Delta structure score with fairness:  -298421.32647497195
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.05894902747405071
+Old structure score after fairness:  528236.3135246321
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  226503.96443704315
+Delta structure score with fairness:  -301732.34908758895
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.005387222195179925
+Old structure score after fairness:  509033.58272453706
+New structure score before fairness:  -25521.2355916298
+New structure score after fairness:  403388.40869613277
+Delta structure score with fairness:  -105645.17402840429
+Delta structure score wihout fairness:  -305.5673171231683
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.00496740725270485
+Old structure score after fairness:  495380.1985807086
+New structure score before fairness:  -40176.92600349731
+New structure score after fairness:  395394.2934516129
+Delta structure score with fairness:  -99985.90512909571
+Delta structure score wihout fairness:  -1307.873585162226
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.006284068018710967
+Old structure score after fairness:  509033.58272453706
+New structure score before fairness:  -28103.54933072708
+New structure score after fairness:  388162.47657661635
+Delta structure score with fairness:  -120871.10614792071
+Delta structure score wihout fairness:  -2887.881056220449
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.003995159849714033
+Old structure score after fairness:  520164.41754024214
+New structure score before fairness:  -14079.547665685257
+New structure score after fairness:  439375.9793024973
+Delta structure score with fairness:  -80788.43823774485
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.006187961832206865
+Old structure score after fairness:  520164.41754024214
+New structure score before fairness:  -14074.819310772918
+New structure score after fairness:  403456.6370113533
+Delta structure score with fairness:  -116707.78052888886
+Delta structure score wihout fairness:  10.014148028640193
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -29433.590827017833
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.0035677330635980886
+Old structure score after fairness:  504815.66017202585
+New structure score before fairness:  -29448.802192380066
+New structure score after fairness:  433297.507143096
+Delta structure score with fairness:  -71518.15302892984
+Delta structure score wihout fairness:  -15.211365362232755
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.00535737891611357
+Old structure score after fairness:  509033.58272453706
+New structure score before fairness:  -25563.018855789844
+New structure score after fairness:  403802.73882946937
+Delta structure score with fairness:  -105230.8438950677
+Delta structure score wihout fairness:  -347.3505812832118
+----Processing edge addition of:  lsat_bin and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.05231000752445448
+Old structure score after fairness:  525209.769745304
+New structure score before fairness:  -7940.384108276956
+New structure score after fairness:  234324.81856612163
+Delta structure score with fairness:  -290884.9511791824
+Delta structure score wihout fairness:  1099.0971454627052
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.004606971111045924
+Old structure score after fairness:  520164.41754024214
+New structure score before fairness:  -14034.41651467573
+New structure score after fairness:  427721.7858534803
+Delta structure score with fairness:  -92442.63168676186
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+The protected attribute is not in new DAG
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.001493452068303161
+Old structure score after fairness:  509033.58272453706
+New structure score before fairness:  508943.2207739167
+New structure score after fairness:  508943.2207739167
+Delta structure score:  -90.36195062036859
+Delta structure score wihout fairness:  -90.36195062035767
+----Processing edge removal of:  lsat_bin and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.0010483589107613683
+Old structure score after fairness:  495380.1985807086
+New structure score before fairness:  525211.4410961142
+New structure score after fairness:  525211.4410961142
+Delta structure score:  29831.24251540564
+Delta structure score wihout fairness:  776.1554239909528
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -29433.590827017833
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.001524443310375618
+Old structure score after fairness:  504815.66017202585
+New structure score before fairness:  498067.16619845974
+New structure score after fairness:  498067.16619845974
+Delta structure score:  -6748.493973566103
+Delta structure score wihout fairness:  -5062.074771515014
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38869.052418335086
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.008780680386706
+Old structure score after fairness:  495380.1985807086
+New structure score before fairness:  350420.15713918733
+New structure score after fairness:  350420.15713918733
+Delta structure score:  -144960.04144152126
+Delta structure score wihout fairness:  491.29452151002624
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.006791512453532614
+Old structure score after fairness:  499994.1014707974
+New structure score before fairness:  375944.178943921
+New structure score after fairness:  375944.178943921
+Delta structure score:  -124049.92252687638
+Delta structure score wihout fairness:  309.4912269723718
+----Processing edge reversal of:  lsat_bin and ugpa_bin ----
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.0006694575118426777
+Old structure score after fairness:  465946.6077536908
+New structure score before fairness:  532463.1584949315
+New structure score after fairness:  532463.1584949315
+Delta structure score:  66516.55074124073
+Delta structure score wihout fairness:  634.9108075824988
+----Processing edge reversal of:  lsat_bin and fam_inc ----
+fairness_score_baseline:  0.001493452068303161
+fairness_score_new:  0.009513210616910794
+Old structure score after fairness:  479599.9918975192
+New structure score before fairness:  327683.2466865034
+New structure score after fairness:  327683.2466865034
+Delta structure score:  -151916.7452110158
+Delta structure score wihout fairness:  113.70169360215004
+=====Model edges:  [('race', 'fam_inc'), ('lsat_bin', 'fam_inc'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('ugpa_bin', 'lsat_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.008414963711494874
+----Processing edge addition of:  male and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.0076151346831574845
+Old structure score after fairness:  383251.50369680976
+New structure score before fairness:  -8989.064309613832
+New structure score after fairness:  391502.3621028021
+Delta structure score with fairness:  8250.85840599233
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge addition of:  ugpa_bin and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.03203163037515031
+Old structure score after fairness:  383251.50369680976
+New structure score before fairness:  -8731.887028002811
+New structure score after fairness:  273804.32040739775
+Delta structure score with fairness:  -109447.183289412
+Delta structure score wihout fairness:  307.5942257368497
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.001007627882470663
+Old structure score after fairness:  386278.0474761379
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  560550.3852235385
+Delta structure score with fairness:  174272.33774740063
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.048701568443921574
+Old structure score after fairness:  383251.50369680976
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  239156.91981455806
+Delta structure score with fairness:  -144094.5838822517
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.04878037548380788
+Old structure score after fairness:  386278.0474761379
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  242050.7069093163
+Delta structure score with fairness:  -144227.34056682157
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.010857245655997189
+Old structure score after fairness:  367075.3166760428
+New structure score before fairness:  -25521.2355916298
+New structure score after fairness:  345846.89484866796
+Delta structure score with fairness:  -21228.42182737484
+Delta structure score wihout fairness:  -305.5673171231683
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.003943470561686646
+Old structure score after fairness:  354198.0879562053
+New structure score before fairness:  -37864.79114839567
+New structure score after fairness:  416659.97920776403
+Delta structure score with fairness:  62461.89125155873
+Delta structure score wihout fairness:  228.10584594846296
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.009819519471397309
+Old structure score after fairness:  367075.3166760428
+New structure score before fairness:  -28103.54933072708
+New structure score after fairness:  351513.18954445655
+Delta structure score with fairness:  -15562.127131586254
+Delta structure score wihout fairness:  -2887.881056220449
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.005580419519151156
+Old structure score after fairness:  378206.1514917479
+New structure score before fairness:  -14079.547665685257
+New structure score after fairness:  411937.0978644301
+Delta structure score with fairness:  33730.94637268223
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -29574.835443426284
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.010963411748317456
+Old structure score after fairness:  362716.14950712316
+New structure score before fairness:  -30224.957616371026
+New structure score after fairness:  340344.1910030336
+Delta structure score with fairness:  -22371.95850408956
+Delta structure score wihout fairness:  -650.1221729447425
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.019277430550300914
+Old structure score after fairness:  367075.3166760428
+New structure score before fairness:  -25563.018855789844
+New structure score after fairness:  298666.71578252665
+Delta structure score with fairness:  -68408.60089351615
+Delta structure score wihout fairness:  -347.3505812832118
+----Processing edge addition of:  lsat_bin and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.05433139925752912
+Old structure score after fairness:  383251.50369680976
+New structure score before fairness:  -7940.384108276956
+New structure score after fairness:  231211.72545689956
+Delta structure score with fairness:  -152039.7782399102
+Delta structure score wihout fairness:  1099.0971454627052
+----Processing edge addition of:  race and male ----
+Old structure score before fairness:  -14084.833458801559
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  9.931199819460113e-05
+Old structure score after fairness:  378206.1514917479
+New structure score before fairness:  -14034.41651467573
+New structure score after fairness:  742775.0675060104
+Delta structure score with fairness:  364568.91601426253
+Delta structure score wihout fairness:  50.416944125829104
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+The protected attribute is not in new DAG
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.008414963711494874
+Old structure score after fairness:  367075.3166760428
+New structure score before fairness:  366984.95472542243
+New structure score after fairness:  366984.95472542243
+Delta structure score:  -90.36195062036859
+Delta structure score wihout fairness:  -90.36195062035767
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -29574.835443426284
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.0
+Old structure score after fairness:  362716.14950712316
+New structure score before fairness:  -34253.63387675674
+New structure score after fairness:  -34253.63387675674
+Delta structure score:  -396969.7833838799
+Delta structure score wihout fairness:  -4678.798433330459
+----Processing edge removal of:  ugpa_bin and lsat_bin ----
+Old structure score before fairness:  -29574.835443426284
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.0017444809639781816
+Old structure score after fairness:  362716.14950712316
+New structure score before fairness:  492058.8025519295
+New structure score after fairness:  492058.8025519295
+Delta structure score:  129342.65304480633
+Delta structure score wihout fairness:  141.24461640845038
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.001283755630762981
+Old structure score after fairness:  354198.0879562053
+New structure score before fairness:  508435.7106488334
+New structure score after fairness:  508435.7106488334
+Delta structure score:  154237.62269262812
+Delta structure score wihout fairness:  -143.61628607247258
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.010786886017764896
+Old structure score after fairness:  358035.8354223031
+New structure score before fairness:  337956.29900837824
+New structure score after fairness:  337956.29900837824
+Delta structure score:  -20079.536413924885
+Delta structure score wihout fairness:  309.4912269723718
+----Processing edge reversal of:  lsat_bin and fam_inc ----
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.002131455519938888
+Old structure score after fairness:  337500.4812326165
+New structure score before fairness:  447642.18081208615
+New structure score after fairness:  447642.18081208615
+Delta structure score:  110141.69957946963
+Delta structure score wihout fairness:  -2609.5336654758503
+----Processing edge reversal of:  admit and ugpa_bin ----
+fairness_score_baseline:  0.008414963711494874
+fairness_score_new:  0.009029761880456982
+Old structure score after fairness:  348185.15048179374
+New structure score before fairness:  342413.83658516395
+New structure score after fairness:  342413.83658516395
+Delta structure score:  -5771.313896629785
+Delta structure score wihout fairness:  18.489189755156985
+=====Model edges:  [('race', 'fam_inc'), ('race', 'male'), ('lsat_bin', 'fam_inc'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('ugpa_bin', 'lsat_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.009576125998474058
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.005780491098565127
+Old structure score after fairness:  375664.63515048736
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  417116.7651653743
+Delta structure score with fairness:  41452.13001488696
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.05292829766434542
+Old structure score after fairness:  372638.09137115924
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  232323.32653379717
+Delta structure score with fairness:  -140314.76483736208
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.06051612836674866
+Old structure score after fairness:  375664.63515048736
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  224349.71451823218
+Delta structure score with fairness:  -151314.92063225518
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.0038775121978664173
+Old structure score after fairness:  356461.9043503923
+New structure score before fairness:  -25521.2355916298
+New structure score after fairness:  430388.4854553683
+Delta structure score with fairness:  73926.58110497601
+Delta structure score wihout fairness:  -305.5673171231683
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.00021208209738343697
+Old structure score after fairness:  343584.6756305548
+New structure score before fairness:  -37864.79114839567
+New structure score after fairness:  656648.7735876911
+Delta structure score with fairness:  313064.09795713634
+Delta structure score wihout fairness:  228.10584594846296
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.008574088488338336
+Old structure score after fairness:  356461.9043503923
+New structure score before fairness:  -28103.54933072708
+New structure score after fairness:  362649.2922189636
+Delta structure score with fairness:  6187.387868571328
+Delta structure score wihout fairness:  -2887.881056220449
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14034.41651467573
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.004704603506658606
+Old structure score after fairness:  367643.1561102232
+New structure score before fairness:  -14037.26277332638
+New structure score after fairness:  425997.0622857153
+Delta structure score with fairness:  58353.9061754921
+Delta structure score wihout fairness:  -2.8462586506502703
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -29574.835443426284
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.005060034305317332
+Old structure score after fairness:  352102.73718147265
+New structure score before fairness:  -30224.957616371026
+New structure score after fairness:  403829.2969532553
+Delta structure score with fairness:  51726.55977178266
+Delta structure score wihout fairness:  -650.1221729447425
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.00444217944217945
+Old structure score after fairness:  356461.9043503923
+New structure score before fairness:  -25563.018855789844
+New structure score after fairness:  419184.00796584814
+Delta structure score with fairness:  62722.10361545585
+Delta structure score wihout fairness:  -347.3505812832118
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25215.668274506632
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.01423396399500304
+Old structure score after fairness:  356461.9043503923
+New structure score before fairness:  323827.3950519698
+New structure score after fairness:  323827.3950519698
+Delta structure score:  -32634.50929842249
+Delta structure score wihout fairness:  -90.36195062035767
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -29574.835443426284
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.0
+Old structure score after fairness:  352102.73718147265
+New structure score before fairness:  -34253.63387675674
+New structure score after fairness:  -34253.63387675674
+Delta structure score:  -386356.3710582294
+Delta structure score wihout fairness:  -4678.798433330459
+----Processing edge removal of:  ugpa_bin and lsat_bin ----
+Old structure score before fairness:  -29574.835443426284
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.006105755285180578
+Old structure score after fairness:  352102.73718147265
+New structure score before fairness:  389195.97369231004
+New structure score after fairness:  389195.97369231004
+Delta structure score:  37093.23651083739
+Delta structure score wihout fairness:  141.24461640845038
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.004303031597609752
+Old structure score after fairness:  343584.6756305548
+New structure score before fairness:  409123.6272751821
+New structure score after fairness:  409123.6272751821
+Delta structure score:  65538.95164462732
+Delta structure score wihout fairness:  -143.61628607247258
+----Processing edge reversal of:  race and male ----
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.0004631802061487167
+Old structure score after fairness:  358603.6748564835
+New structure score before fairness:  607301.59879062
+New structure score after fairness:  607301.59879062
+Delta structure score:  248697.92393413646
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  lsat_bin and fam_inc ----
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  7.389299524346304e-05
+Old structure score after fairness:  326887.068906966
+New structure score before fairness:  723684.5417690638
+New structure score after fairness:  723684.5417690638
+Delta structure score:  396797.4728620978
+Delta structure score wihout fairness:  -2609.5336654758503
+----Processing edge reversal of:  admit and ugpa_bin ----
+fairness_score_baseline:  0.009576125998474058
+fairness_score_new:  0.007332710736949535
+Old structure score after fairness:  337571.7381561432
+New structure score before fairness:  359507.14042992337
+New structure score after fairness:  359507.14042992337
+Delta structure score:  21935.402273780142
+Delta structure score wihout fairness:  18.489189755156985
+=====Model edges:  [('race', 'fam_inc'), ('race', 'male'), ('fam_inc', 'lsat_bin'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('ugpa_bin', 'lsat_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.0017557648266915277
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.011895199266619201
+Old structure score after fairness:  514950.0653047784
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  357879.6651741585
+Delta structure score with fairness:  -157070.40013061988
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  male and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.015752996186759127
+Old structure score after fairness:  514950.0653047784
+New structure score before fairness:  -6007.65168129526
+New structure score after fairness:  334800.051799325
+Delta structure score with fairness:  -180150.01350545342
+Delta structure score wihout fairness:  5.285793116301647
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.008900126977253092
+Old structure score after fairness:  482870.10578484583
+New structure score before fairness:  -38694.73761640978
+New structure score after fairness:  348993.7631645717
+Delta structure score with fairness:  -133876.3426202741
+Delta structure score wihout fairness:  -601.840622065647
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.05794688708762979
+Old structure score after fairness:  511923.5215254503
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  224885.2672717452
+Delta structure score with fairness:  -287038.2542537051
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.05091887513665225
+Old structure score after fairness:  514950.0653047784
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  238527.81452888917
+Delta structure score with fairness:  -276422.25077588926
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.0025088989123173283
+Old structure score after fairness:  495892.94801070314
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  466571.2967374436
+Delta structure score with fairness:  -29321.651273259544
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.010101555293314829
+Old structure score after fairness:  482870.10578484583
+New structure score before fairness:  -37864.79114839567
+New structure score after fairness:  339426.87792572344
+Delta structure score with fairness:  -143443.2278591224
+Delta structure score wihout fairness:  228.10584594846296
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.0024571676672513754
+Old structure score after fairness:  495892.94801070314
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  468015.18280803476
+Delta structure score with fairness:  -27877.76520266838
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  admit and male ----
+Old structure score before fairness:  -14034.41651467573
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.0008201755757278884
+Old structure score after fairness:  506928.58626451425
+New structure score before fairness:  -14037.26277332638
+New structure score after fairness:  569421.5385345711
+Delta structure score with fairness:  62492.95227005682
+Delta structure score wihout fairness:  -2.8462586506502703
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14034.41651467573
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.004282183141301993
+Old structure score after fairness:  506928.58626451425
+New structure score before fairness:  -14048.486229364093
+New structure score after fairness:  433710.43955585954
+Delta structure score with fairness:  -73218.1467086547
+Delta structure score wihout fairness:  -14.069714688363092
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.011855710165588257
+Old structure score after fairness:  488633.02016426803
+New structure score before fairness:  -36041.95128240187
+New structure score after fairness:  328102.5667184104
+Delta structure score with fairness:  -160530.45344585762
+Delta structure score wihout fairness:  -3711.9686674799377
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.007520648793503518
+Old structure score after fairness:  495892.94801070314
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  376441.4001744429
+Delta structure score with fairness:  -119451.54783626023
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.002949727114196901
+Old structure score after fairness:  495892.94801070314
+New structure score before fairness:  452894.79921534884
+New structure score after fairness:  452894.79921534884
+Delta structure score:  -42998.1487953543
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.0025618846550700125
+Old structure score after fairness:  488633.02016426803
+New structure score before fairness:  460364.5938959856
+New structure score after fairness:  460364.5938959856
+Delta structure score:  -28268.426268282405
+Delta structure score wihout fairness:  2755.147171495646
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.0
+Old structure score after fairness:  488633.02016426803
+New structure score before fairness:  -35363.975882070525
+New structure score after fairness:  -35363.975882070525
+Delta structure score:  -523996.9960463386
+Delta structure score wihout fairness:  -3033.993267148595
+----Processing edge removal of:  ugpa_bin and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.004916485445162655
+Old structure score after fairness:  488633.02016426803
+New structure score before fairness:  406951.7650064185
+New structure score after fairness:  406951.7650064185
+Delta structure score:  -81681.25515784952
+Delta structure score wihout fairness:  2864.4799754864544
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.004689091466679812
+Old structure score after fairness:  482870.10578484583
+New structure score before fairness:  402068.985952345
+New structure score after fairness:  402068.985952345
+Delta structure score:  -80801.11983250082
+Delta structure score wihout fairness:  -143.61628607247258
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.008379480352613336
+Old structure score after fairness:  486853.46675696346
+New structure score before fairness:  358528.4055712598
+New structure score after fairness:  358528.4055712598
+Delta structure score:  -128325.06118570367
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  race and male ----
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.005804428520624544
+Old structure score after fairness:  497889.10501077457
+New structure score before fairness:  399711.2061244861
+New structure score after fairness:  399711.2061244861
+Delta structure score:  -98177.89888628846
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  admit and ugpa_bin ----
+fairness_score_baseline:  0.0017557648266915277
+fairness_score_new:  0.008206969333502359
+Old structure score after fairness:  476857.16831043427
+New structure score before fairness:  350258.62254165113
+New structure score after fairness:  350258.62254165113
+Delta structure score:  -126598.54576878314
+Delta structure score wihout fairness:  18.489189755156985
+=====Model edges:  [('race', 'fam_inc'), ('race', 'male'), ('fam_inc', 'lsat_bin'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('admit', 'male'), ('ugpa_bin', 'lsat_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.00523658886232288
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.002188254814318169
+Old structure score after fairness:  406168.13820294826
+New structure score before fairness:  -25075.166194236324
+New structure score after fairness:  477807.6732921599
+Delta structure score with fairness:  71639.53508921165
+Delta structure score wihout fairness:  -5.111425749484624
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.011208032429697437
+Old structure score after fairness:  393145.29597709095
+New structure score before fairness:  -37864.79114839567
+New structure score after fairness:  330892.4655796596
+Delta structure score with fairness:  -62252.83039743133
+Delta structure score wihout fairness:  228.10584594846296
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.004429451141967605
+Old structure score after fairness:  425225.2554970235
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  438990.8096063088
+Delta structure score with fairness:  13765.554109285295
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  ugpa_bin and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.012525807658118365
+Old structure score after fairness:  406168.13820294826
+New structure score before fairness:  -25350.92941906557
+New structure score after fairness:  334279.1670426416
+Delta structure score with fairness:  -71888.97116030665
+Delta structure score wihout fairness:  -280.87465057873123
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14037.26277332638
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.0021618607310467247
+Old structure score after fairness:  417200.9301981087
+New structure score before fairness:  -14087.309747940626
+New structure score after fairness:  489791.9133798372
+Delta structure score with fairness:  72590.98318172846
+Delta structure score wihout fairness:  -50.04697461424621
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.007303449380139007
+Old structure score after fairness:  398908.21035651315
+New structure score before fairness:  -36041.95128240187
+New structure score after fairness:  367880.84385561297
+Delta structure score with fairness:  -31027.366500900185
+Delta structure score wihout fairness:  -3711.9686674799377
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.005110842662880533
+Old structure score after fairness:  393145.29597709095
+New structure score before fairness:  -38694.73761640978
+New structure score after fairness:  394539.1732722865
+Delta structure score with fairness:  1393.8772951955325
+Delta structure score wihout fairness:  -601.840622065647
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -9039.481253739661
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.05907843969644559
+Old structure score after fairness:  422198.7117176954
+New structure score before fairness:  -8977.072482168565
+New structure score after fairness:  223297.3645526521
+Delta structure score with fairness:  -198901.3471650433
+Delta structure score wihout fairness:  62.40877157109571
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.04953073749954956
+Old structure score after fairness:  425225.2554970235
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  240797.29986412692
+Delta structure score with fairness:  -184427.9556328966
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge addition of:  male and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.0034251882864656247
+Old structure score after fairness:  406168.13820294826
+New structure score before fairness:  -25084.124483175194
+New structure score after fairness:  441010.0526304955
+Delta structure score with fairness:  34841.91442754725
+Delta structure score wihout fairness:  -14.069714688353997
+----Processing edge removal of:  race and fam_inc ----
+Old structure score before fairness:  -25070.05476848684
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.0019818903389597353
+Old structure score after fairness:  406168.13820294826
+New structure score before fairness:  485545.99429729115
+New structure score after fairness:  485545.99429729115
+Delta structure score:  79377.85609434289
+Delta structure score wihout fairness:  -399.85317759272584
+----Processing edge removal of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.005153456468946535
+Old structure score after fairness:  398908.21035651315
+New structure score before fairness:  402977.3037146259
+New structure score after fairness:  402977.3037146259
+Delta structure score:  4069.093358112732
+Delta structure score wihout fairness:  2755.147171495646
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.0
+Old structure score after fairness:  398908.21035651315
+New structure score before fairness:  -35363.975882070525
+New structure score after fairness:  -35363.975882070525
+Delta structure score:  -434272.1862385837
+Delta structure score wihout fairness:  -3033.993267148595
+----Processing edge removal of:  ugpa_bin and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.002179678651081221
+Old structure score after fairness:  398908.21035651315
+New structure score before fairness:  473739.76507143816
+New structure score after fairness:  473739.76507143816
+Delta structure score:  74831.554714925
+Delta structure score wihout fairness:  2864.4799754864544
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.007260116208958015
+Old structure score after fairness:  393145.29597709095
+New structure score before fairness:  366174.8999089455
+New structure score after fairness:  366174.8999089455
+Delta structure score:  -26970.396068145463
+Delta structure score wihout fairness:  -143.61628607247258
+----Processing edge reversal of:  race and fam_inc ----
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.0015057119947095993
+Old structure score after fairness:  397128.6569492086
+New structure score before fairness:  499468.43216384324
+New structure score after fairness:  499468.43216384324
+Delta structure score:  102339.77521463466
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  race and male ----
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.008442346999528616
+Old structure score after fairness:  408161.44894436904
+New structure score before fairness:  368955.6176155079
+New structure score after fairness:  368955.6176155079
+Delta structure score:  -39205.831328861124
+Delta structure score wihout fairness:  8.132051766951918
+----Processing edge reversal of:  admit and male ----
+fairness_score_baseline:  0.00523658886232288
+fairness_score_new:  0.0053055406764362795
+Old structure score after fairness:  411187.99272369716
+New structure score before fairness:  410122.0388867875
+New structure score after fairness:  410122.0388867875
+Delta structure score:  -1065.95383690967
+Delta structure score wihout fairness:  8.132051766950099
+=====Model edges:  [('race', 'male'), ('fam_inc', 'lsat_bin'), ('fam_inc', 'race'), ('admit', 'lsat_bin'), ('admit', 'ugpa_bin'), ('admit', 'male'), ('ugpa_bin', 'lsat_bin'), ('male', 'ugpa_bin')] =====
+fairness_score_baseline:  0.0012382553346527436
+----Processing edge addition of:  admit and fam_inc ----
+Old structure score before fairness:  -25469.907946079566
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.021390826426304424
+Old structure score after fairness:  524165.3036762068
+New structure score before fairness:  -25448.791724149985
+New structure score after fairness:  290239.4818161888
+Delta structure score with fairness:  -233925.821860018
+Delta structure score wihout fairness:  21.116221929580206
+----Processing edge addition of:  race and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.002906856553450493
+Old structure score after fairness:  511542.3146279422
+New structure score before fairness:  -37864.79114839567
+New structure score after fairness:  441702.00893099606
+Delta structure score with fairness:  -69840.30569694616
+Delta structure score wihout fairness:  228.10584594846296
+----Processing edge addition of:  fam_inc and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.013936856291447718
+Old structure score after fairness:  543622.2741478748
+New structure score before fairness:  -5991.821252481983
+New structure score after fairness:  344873.5964644863
+Delta structure score with fairness:  -198748.67768338847
+Delta structure score wihout fairness:  21.116221929578387
+----Processing edge addition of:  fam_inc and male ----
+Old structure score before fairness:  -14037.26277332638
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.009283365407121491
+Old structure score after fairness:  535597.94884896
+New structure score before fairness:  -14087.309747940626
+New structure score after fairness:  370139.63361219416
+Delta structure score with fairness:  -165458.31523676583
+Delta structure score wihout fairness:  -50.04697461424621
+----Processing edge addition of:  male and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.003406717549519378
+Old structure score after fairness:  517305.2290073644
+New structure score before fairness:  -36041.95128240187
+New structure score after fairness:  430496.2012023489
+Delta structure score with fairness:  -86809.0278050155
+Delta structure score wihout fairness:  -3711.9686674799377
+----Processing edge addition of:  fam_inc and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.002974513590034658
+Old structure score after fairness:  511542.3146279422
+New structure score before fairness:  -38694.73761640978
+New structure score after fairness:  438982.9009618603
+Delta structure score with fairness:  -72559.4136660819
+Delta structure score wihout fairness:  -601.840622065647
+----Processing edge addition of:  admit and race ----
+Old structure score before fairness:  -8639.628076146933
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.07119575322002603
+Old structure score after fairness:  540995.5835461394
+New structure score before fairness:  -8603.446952254904
+New structure score after fairness:  208352.33670202066
+Delta structure score with fairness:  -332643.24684411875
+Delta structure score wihout fairness:  36.18112389202906
+----Processing edge addition of:  race and admit ----
+Old structure score before fairness:  -6012.937474411561
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.06104244633626225
+Old structure score after fairness:  543622.2741478748
+New structure score before fairness:  -5950.528702840467
+New structure score after fairness:  223638.69621293605
+Delta structure score with fairness:  -319983.5779349387
+Delta structure score wihout fairness:  62.408771571093894
+----Processing edge removal of:  fam_inc and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.013361066029759824
+Old structure score after fairness:  517305.2290073644
+New structure score before fairness:  324754.8752269231
+New structure score after fairness:  324754.8752269231
+Delta structure score:  -192550.35378044134
+Delta structure score wihout fairness:  2755.147171495646
+----Processing edge removal of:  fam_inc and race ----
+Old structure score before fairness:  -8639.628076146933
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.007233892630846034
+Old structure score after fairness:  540995.5835461394
+New structure score before fairness:  395669.04337316245
+New structure score after fairness:  395669.04337316245
+Delta structure score:  -145326.54017297697
+Delta structure score wihout fairness:  -399.85317759272766
+----Processing edge removal of:  admit and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.0
+Old structure score after fairness:  517305.2290073644
+New structure score before fairness:  -35363.975882070525
+New structure score after fairness:  -35363.975882070525
+Delta structure score:  -552669.204889435
+Delta structure score wihout fairness:  -3033.993267148595
+----Processing edge removal of:  ugpa_bin and lsat_bin ----
+Old structure score before fairness:  -32329.98261492193
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.0017178000084917405
+Old structure score after fairness:  517305.2290073644
+New structure score before fairness:  493292.39361318597
+New structure score after fairness:  493292.39361318597
+Delta structure score:  -24012.83539417846
+Delta structure score wihout fairness:  2864.4799754864544
+----Processing edge removal of:  male and ugpa_bin ----
+Old structure score before fairness:  -38092.89699434413
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.00179098429824541
+Old structure score after fairness:  511542.3146279422
+New structure score before fairness:  481095.75931514474
+New structure score after fairness:  481095.75931514474
+Delta structure score:  -30446.555312797485
+Delta structure score wihout fairness:  -143.61628607247258
+----Processing edge reversal of:  race and male ----
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.0048832411140176946
+Old structure score after fairness:  526958.320772813
+New structure score before fairness:  414281.5091032907
+New structure score after fairness:  414281.5091032907
+Delta structure score:  -112676.81166952237
+Delta structure score wihout fairness:  -15.95181095004773
+----Processing edge reversal of:  admit and male ----
+fairness_score_baseline:  0.0012382553346527436
+fairness_score_new:  0.005308152362896668
+Old structure score after fairness:  529585.0113745484
+New structure score before fairness:  410081.63064143446
+New structure score after fairness:  410081.63064143446
+Delta structure score:  -119503.38073311397
+Delta structure score wihout fairness:  8.132051766950099
+d.add_edge('race', 'male')
+d.add_edge('fam_inc', 'lsat_bin')
+d.add_edge('fam_inc', 'race')
+d.add_edge('admit', 'lsat_bin')
+d.add_edge('admit', 'ugpa_bin')
+d.add_edge('admit', 'male')
+d.add_edge('ugpa_bin', 'lsat_bin')
+d.add_edge('male', 'ugpa_bin')

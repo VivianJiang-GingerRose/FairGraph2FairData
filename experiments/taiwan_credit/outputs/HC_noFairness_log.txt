@@ -1,0 +1,217 @@
+=====Model edges:  [('gender_cat', 'interest_cat'), ('gender_cat', 'education_cat'), ('interest_cat', 'default_f'), ('education_cat', 'marriage_cat')] =====
+----Processing edge addition of:  interest_cat and marriage_cat ----
+Old structure score before fairness:  -21968.825056688445
+Delta structure score with fairness:  -183.15338744850305
+Delta structure score wihout fairness:  -183.15338744850305
+----Processing edge addition of:  gender_cat and marriage_cat ----
+Old structure score before fairness:  -21968.825056688445
+Delta structure score with fairness:  49.68501695282248
+Delta structure score wihout fairness:  49.68501695282248
+----Processing edge addition of:  interest_cat and education_cat ----
+Old structure score before fairness:  -32548.273021345933
+Delta structure score with fairness:  -122.15805837949301
+Delta structure score wihout fairness:  -122.15805837949301
+----Processing edge addition of:  marriage_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -86.81314371615008
+Delta structure score wihout fairness:  -86.81314371615008
+----Processing edge addition of:  education_cat and default_f ----
+Old structure score before fairness:  -12644.494728523447
+Delta structure score with fairness:  -17.06920292222094
+Delta structure score wihout fairness:  -17.06920292222094
+----Processing edge addition of:  education_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -122.15805837947846
+Delta structure score wihout fairness:  -122.15805837947846
+----Processing edge addition of:  marriage_cat and default_f ----
+Old structure score before fairness:  -12644.494728523447
+Delta structure score with fairness:  -50.93827363577293
+Delta structure score wihout fairness:  -50.93827363577293
+----Processing edge addition of:  gender_cat and default_f ----
+Old structure score before fairness:  -12644.494728523447
+Delta structure score with fairness:  804.816178710118
+Delta structure score wihout fairness:  804.816178710118
+----Processing edge removal of:  gender_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score:  -488.09594909929
+Delta structure score wihout fairness:  -488.09594909929
+----Processing edge removal of:  gender_cat and education_cat ----
+Old structure score before fairness:  -32548.273021345933
+Delta structure score:  3.497468201643642
+Delta structure score wihout fairness:  3.497468201643642
+----Processing edge removal of:  interest_cat and default_f ----
+Old structure score before fairness:  -12644.494728523447
+Delta structure score:  -3213.3368698773484
+Delta structure score wihout fairness:  -3213.3368698773484
+----Processing edge removal of:  education_cat and marriage_cat ----
+Old structure score before fairness:  -21968.825056688445
+Delta structure score:  -509.45466576167746
+Delta structure score wihout fairness:  -509.45466576167746
+----Processing edge reversal of:  gender_cat and interest_cat ----
+Delta structure score:  1.4551915228366852e-11
+Delta structure score wihout fairness:  1.4551915228366852e-11
+----Processing edge reversal of:  gender_cat and education_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  education_cat and marriage_cat ----
+Delta structure score:  45.547731219412526
+Delta structure score wihout fairness:  45.54773121940889
+=====Model edges:  [('gender_cat', 'interest_cat'), ('gender_cat', 'education_cat'), ('gender_cat', 'default_f'), ('interest_cat', 'default_f'), ('education_cat', 'marriage_cat')] =====
+----Processing edge addition of:  interest_cat and marriage_cat ----
+Old structure score before fairness:  -21968.825056688445
+Delta structure score with fairness:  -183.15338744850305
+Delta structure score wihout fairness:  -183.15338744850305
+----Processing edge addition of:  gender_cat and marriage_cat ----
+Old structure score before fairness:  -21968.825056688445
+Delta structure score with fairness:  49.68501695282248
+Delta structure score wihout fairness:  49.68501695282248
+----Processing edge addition of:  education_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score with fairness:  -100.87771343601526
+Delta structure score wihout fairness:  -100.87771343601526
+----Processing edge addition of:  marriage_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -86.81314371615008
+Delta structure score wihout fairness:  -86.81314371615008
+----Processing edge addition of:  interest_cat and education_cat ----
+Old structure score before fairness:  -32548.273021345933
+Delta structure score with fairness:  -122.15805837949301
+Delta structure score wihout fairness:  -122.15805837949301
+----Processing edge addition of:  education_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -122.15805837947846
+Delta structure score wihout fairness:  -122.15805837947846
+----Processing edge addition of:  marriage_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score with fairness:  -107.2127040177329
+Delta structure score wihout fairness:  -107.2127040177329
+----Processing edge removal of:  gender_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score:  -488.09594909929
+Delta structure score wihout fairness:  -488.09594909929
+----Processing edge removal of:  gender_cat and education_cat ----
+Old structure score before fairness:  -32548.273021345933
+Delta structure score:  3.497468201643642
+Delta structure score wihout fairness:  3.497468201643642
+----Processing edge removal of:  interest_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score:  -3999.5161834740593
+Delta structure score wihout fairness:  -3999.5161834740593
+----Processing edge removal of:  education_cat and marriage_cat ----
+Old structure score before fairness:  -21968.825056688445
+Delta structure score:  -509.45466576167746
+Delta structure score wihout fairness:  -509.45466576167746
+----Processing edge reversal of:  gender_cat and interest_cat ----
+Delta structure score:  1.4551915228366852e-11
+Delta structure score wihout fairness:  1.4551915228366852e-11
+----Processing edge reversal of:  gender_cat and education_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  education_cat and marriage_cat ----
+Delta structure score:  45.547731219412526
+Delta structure score wihout fairness:  45.54773121940889
+=====Model edges:  [('gender_cat', 'interest_cat'), ('gender_cat', 'education_cat'), ('gender_cat', 'default_f'), ('gender_cat', 'marriage_cat'), ('interest_cat', 'default_f'), ('education_cat', 'marriage_cat')] =====
+----Processing edge addition of:  interest_cat and marriage_cat ----
+Old structure score before fairness:  -21919.140039735623
+Delta structure score with fairness:  -370.293421498769
+Delta structure score wihout fairness:  -370.293421498769
+----Processing edge addition of:  interest_cat and education_cat ----
+Old structure score before fairness:  -32548.273021345933
+Delta structure score with fairness:  -122.15805837949301
+Delta structure score wihout fairness:  -122.15805837949301
+----Processing edge addition of:  marriage_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -86.81314371615008
+Delta structure score wihout fairness:  -86.81314371615008
+----Processing edge addition of:  education_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score with fairness:  -100.87771343601526
+Delta structure score wihout fairness:  -100.87771343601526
+----Processing edge addition of:  education_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -122.15805837947846
+Delta structure score wihout fairness:  -122.15805837947846
+----Processing edge addition of:  marriage_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score with fairness:  -107.2127040177329
+Delta structure score wihout fairness:  -107.2127040177329
+----Processing edge removal of:  gender_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score:  -488.09594909929
+Delta structure score wihout fairness:  -488.09594909929
+----Processing edge removal of:  gender_cat and education_cat ----
+Old structure score before fairness:  -32548.273021345933
+Delta structure score:  3.497468201643642
+Delta structure score wihout fairness:  3.497468201643642
+----Processing edge removal of:  interest_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score:  -3999.5161834740593
+Delta structure score wihout fairness:  -3999.5161834740593
+----Processing edge removal of:  education_cat and marriage_cat ----
+Old structure score before fairness:  -21919.140039735623
+Delta structure score:  -555.00239698109
+Delta structure score wihout fairness:  -555.00239698109
+----Processing edge reversal of:  gender_cat and interest_cat ----
+Delta structure score:  1.4551915228366852e-11
+Delta structure score wihout fairness:  1.4551915228366852e-11
+----Processing edge reversal of:  gender_cat and education_cat ----
+Delta structure score:  0.0
+Delta structure score wihout fairness:  0.0
+----Processing edge reversal of:  education_cat and marriage_cat ----
+Delta structure score:  -7.275957614183426e-12
+Delta structure score wihout fairness:  -7.275957614183426e-12
+=====Model edges:  [('gender_cat', 'interest_cat'), ('gender_cat', 'default_f'), ('gender_cat', 'marriage_cat'), ('interest_cat', 'default_f'), ('education_cat', 'marriage_cat')] =====
+----Processing edge addition of:  interest_cat and marriage_cat ----
+Old structure score before fairness:  -21919.140039735623
+Delta structure score with fairness:  -370.293421498769
+Delta structure score wihout fairness:  -370.293421498769
+----Processing edge addition of:  interest_cat and education_cat ----
+Old structure score before fairness:  -32544.77555314429
+Delta structure score with fairness:  -53.76592771945434
+Delta structure score wihout fairness:  -53.76592771945434
+----Processing edge addition of:  marriage_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -86.81314371615008
+Delta structure score wihout fairness:  -86.81314371615008
+----Processing edge addition of:  education_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score with fairness:  -100.87771343601526
+Delta structure score wihout fairness:  -100.87771343601526
+----Processing edge addition of:  education_cat and gender_cat ----
+Old structure score before fairness:  -20149.220370143154
+Delta structure score with fairness:  -3.497468201640004
+Delta structure score wihout fairness:  -3.497468201640004
+----Processing edge addition of:  education_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score with fairness:  -122.15805837947846
+Delta structure score wihout fairness:  -122.15805837947846
+----Processing edge addition of:  marriage_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score with fairness:  -107.2127040177329
+Delta structure score wihout fairness:  -107.2127040177329
+----Processing edge removal of:  gender_cat and interest_cat ----
+Old structure score before fairness:  -47948.81586840711
+Delta structure score:  -488.09594909929
+Delta structure score wihout fairness:  -488.09594909929
+----Processing edge removal of:  interest_cat and default_f ----
+Old structure score before fairness:  -11839.678549813329
+Delta structure score:  -3999.5161834740593
+Delta structure score wihout fairness:  -3999.5161834740593
+----Processing edge removal of:  education_cat and marriage_cat ----
+Old structure score before fairness:  -21919.140039735623
+Delta structure score:  -555.00239698109
+Delta structure score wihout fairness:  -555.00239698109
+----Processing edge reversal of:  gender_cat and interest_cat ----
+Delta structure score:  1.4551915228366852e-11
+Delta structure score wihout fairness:  1.4551915228366852e-11
+----Processing edge reversal of:  gender_cat and marriage_cat ----
+Delta structure score:  -45.547731219412526
+Delta structure score wihout fairness:  -45.547731219412526
+----Processing edge reversal of:  education_cat and marriage_cat ----
+Delta structure score:  -45.547731219412526
+Delta structure score wihout fairness:  -45.547731219416164
+d.add_edge('gender_cat', 'interest_cat')
+d.add_edge('gender_cat', 'default_f')
+d.add_edge('gender_cat', 'marriage_cat')
+d.add_edge('interest_cat', 'default_f')
+d.add_edge('education_cat', 'marriage_cat')

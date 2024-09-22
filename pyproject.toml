@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "faggm"
+version = "0.1.0"
+description = "fairness-aware generative graphical models"
+authors = ["Vivian Jiang <107968375+VivianJiang-GingerRose@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+networkx = "^3.3"
+daft = "^0.1.2"
+fairlearn = "^0.10.0"
+xgboost = "^2.1.1"
+tqdm = "^4.66.5"
+matplotlib = "^3.9.2"
+aif360 = "^0.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
