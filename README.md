@@ -1,19 +1,19 @@
-# FaGGM (Fairness-aware Generative Graphical Models)
+# From Fair Graphs to Fair Data: A DAG-Based Approach to Mitigating Bias in AI Systems
 
 ## Description
 
-**FaGGM** (Fairness-aware Generative Graphical Model) is a novel approach designed to address biases in machine learning models that arise from historical prejudices and underrepresented data groups. These biases can lead to discrimination, either by perpetuating existing prejudices or by failing to accurately identify patterns for certain groups due to insufficient data.
+This project addresses biases in machine learning models that arise from historical bias and underrepresented data groups. These biases can lead to discrimination, either by perpetuating existing prejudices or by failing to accurately identify patterns for certain groups due to insufficient data.
 
-FaGGM tackles these challenges by incorporating a fairness regularization term into its graph structure learning algorithm. This integration ensures that the learned models are fairer and more equitable across different groups. Additionally, FaGGM serves as a fair data generator, enhancing data representation for underrepresented groups and improving overall model performance.
+This approach tackles these challenges by incorporating a fairness regularization term into its graph structure learning algorithm. This integration ensures that the learned models are fairer and more equitable across different groups. Additionally, it serves as a fair data generator, enhancing data representation for underrepresented groups and improving overall model performance.
 
-Key features of FaGGM include:
+Key features include:
 
 - **Fairness Integration**: Compatible with most fairness definitions, it seamlessly integrates fairness considerations into the model learning process.
 - **Flexible Structure Learning**: Works with various score-based structure learning algorithms, providing flexibility in model development.
 - **High-Quality Synthetic Data Generation**: Produces synthetic data that mitigates bias while maintaining data quality.
 - **Improved Model Fairness**: Experimental results show significantly increased fairness scores with minimal reductions in accuracy compared to other bias mitigation methods.
 
-By using FaGGM, developers and researchers can build machine learning models that are not only accurate but also fair, promoting equitable decision-making in applications that impact people's lives.
+By using this project, developers and researchers can build machine learning models that are not only accurate but also fair, promoting equitable decision-making in applications that impact people's lives.
 
 
 ## Repository Structure
@@ -63,10 +63,10 @@ Python
 If you use this code or our method in your research, please consider citing our paper:
 
 ```bibtex
-@article{jiang2024FaGGM,
-  title={Charting a Fair Path: FaGGM Fairness-aware Generative Graphical Models},
+@article{jiang2025Fairgraphs,
+  title={From Fair Graphs to Fair Data: A DAG-Based Approach to Mitigating Bias in AI Systems},
   author={Vivian Wei Jiang, Gustavo Batista, and Michael Bain},
-  year={2024},
+  year={2025},
 }
 
 ## References

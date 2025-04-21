@@ -6,12 +6,21 @@ import glob
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+import os
+import sys
 
+# Determine the current directory in a way that works in both script and REPL modes
+try:
+    current_dir = os.path.dirname(os.path.abspath(__file__))  # Works in script mode
+except NameError:
+    current_dir = os.getcwd()  # Works in REPL mode
+
+sys.path.append(os.path.join(current_dir, '..'))
+                
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
 
-
-# Set seeds
+## Set seeds
 seed_bn = 123
 seed_ml = 123
 
@@ -20,20 +29,49 @@ df_dutch = pd.read_csv('data_dutch_census/dutch.csv')
 print(df_dutch.shape)
 # (60420, 12)
 
-def dutch_data_preprocess(df_dutch):
-    # Make sure all the columns are in the correct data type
-    df_dutch['age'] = df_dutch['age'].astype('object')
-    df_dutch['household_position'] = df_dutch['household_position'].astype('object')
-    df_dutch['household_size'] = df_dutch['household_size'].astype('object')
-    df_dutch['prev_residence_place'] = df_dutch['prev_residence_place'].astype('object')
-    df_dutch['citizenship'] = df_dutch['citizenship'].astype('object')
-    df_dutch['country_birth'] = df_dutch['country_birth'].astype('object')
-    df_dutch['edu_level'] = df_dutch['edu_level'].astype('object')
-    df_dutch['economic_status'] = df_dutch['economic_status'].astype('object')
-    df_dutch['cur_eco_activity'] = df_dutch['cur_eco_activity'].astype('object')
-    df_dutch['marital_status'] = df_dutch['marital_status'].astype('object')
+# def dutch_data_preprocess(df_dutch):
+#     ## Make sure all the columns are in the correct data type
+#     df_dutch['age'] = df_dutch['age'].astype('object')
+#     df_dutch['household_position'] = df_dutch['household_position'].astype('object')
+#     df_dutch['household_size'] = df_dutch['household_size'].astype('object')
+#     df_dutch['prev_residence_place'] = df_dutch['prev_residence_place'].astype('object')
+#     df_dutch['citizenship'] = df_dutch['citizenship'].astype('object')
+#     df_dutch['country_birth'] = df_dutch['country_birth'].astype('object')
+#     df_dutch['edu_level'] = df_dutch['edu_level'].astype('object')
+#     df_dutch['economic_status'] = df_dutch['economic_status'].astype('object')
+#     df_dutch['cur_eco_activity'] = df_dutch['cur_eco_activity'].astype('object')
+#     df_dutch['marital_status'] = df_dutch['marital_status'].astype('object')
 
-    return df_dutch
+#     return df_dutch
+
+def dutch_data_preprocess(df_dutch):
+    """
+    Preprocess Dutch dataset with error handling for missing columns.
+    Returns None if critical columns are missing, allowing the main loop to skip the problematic data.
+    """
+    # List of columns that need to be processed
+    columns_to_process = [
+        'age', 'household_position', 'household_size', 'prev_residence_place',
+        'citizenship', 'country_birth', 'edu_level', 'economic_status',
+        'cur_eco_activity', 'marital_status'
+    ]
+    
+    try:
+        # Check if all required columns exist
+        missing_columns = [col for col in columns_to_process if col not in df_dutch.columns]
+        if missing_columns:
+            print(f"Warning: Missing columns in dataset: {missing_columns}")
+            return None
+            
+        # Process existing columns
+        for column in columns_to_process:
+            df_dutch[column] = df_dutch[column].astype('object')
+            
+        return df_dutch
+        
+    except Exception as e:
+        print(f"Error processing data: {str(e)}")
+        return None
 
 df_dutch = dutch_data_preprocess(df_dutch)
 
@@ -43,16 +81,16 @@ node_list = df_dutch.columns.tolist()
 """ **********************************************
 4. Parameter Learning
 **********************************************"""
-from FairnessAwareHC.models import BayesianNetwork
-from FairnessAwareHC.estimators import MaximumLikelihoodEstimator, BayesianEstimator
-from FairnessAwareHC.factors.discrete import State
-from FairnessAwareHC.sampling import BayesianModelSampling
+from pgmpyVJ.models import BayesianNetwork
+from pgmpyVJ.estimators import MaximumLikelihoodEstimator, BayesianEstimator
+from pgmpy.factors.discrete import State
+from pgmpyVJ.sampling import BayesianModelSampling
 
 
-# Set parameters
+## Set parameters
 df_bn = df_dutch.copy()
 
-folder_name = 'experiments/dutch_census'
+folder_name = 'data_dutch_census'
 dt_name = "dutch"
 outcome_name = 'occupation'
 outcome_name_val_1 = 1
@@ -72,42 +110,42 @@ large_data_size = original_data_size * 2
 half_data_size = original_data_size // 2
 
 
-# Specify the folder name where the logs are saved.
-log_folder_name = 'outputs'
+## Specify the folder name where the logs are saved.
+log_folder_name = 'log_aic_eo_20241020'
 
-# Import all the logs in the folder, including the file name, where the last component indicates the lambda value.
-# Get all the log files
+## Import all the logs in the folder, including the file name, where the last component indicates the lambda value.
+## Get all the log files
 log_files = glob.glob(f'{folder_name}/{log_folder_name}/*.txt')
-# Remove the txt file from without fairness run from log_files
+## Remove the txt file from without fairness run from log_files
 log_files = [file for file in log_files if 'withoutFairness' not in file]
 
 
-# Get the lambda values
+## Get the lambda values
 lambda_values = [re.search(r"_(\d+\.\d+)", file).group(1) for file in log_files]
 
 
-# Read the log files one by one, and only keep lines start with "d.add_edge(". Also keep the lambda value.
-# Store the results in a dictionary.
+## Read the log files one by one, and only keep lines start with "d.add_edge(". Also keep the lambda value.
+## Store the results in a dictionary.
 log_data = {}
 for i, file in enumerate(log_files):
     with open(file, 'r') as f:
         lines = f.readlines()
-        # Remove leading and trailing whitespaces
+        ## Remove leading and trailing whitespaces
         lines = [line.strip() for line in lines]
         # print(lines)
         log_data[lambda_values[i]] = [line for line in lines if line.startswith("d.add_edge")]
 
 
 
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Sample 0: Initial graph
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Sample 0: Initial graph
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 dag0 = BayesianNetwork()
 dag0.add_nodes_from(['sex', 'age', 'household_position', 'household_size','prev_residence_place', 'citizenship'
                     , 'country_birth', 'edu_level','economic_status', 'cur_eco_activity', 'marital_status', 'occupation'])
 
 
-# Add edges
+## Add edges
 dag0.add_edge('sex', 'cur_eco_activity')
 dag0.add_edge('edu_level', 'cur_eco_activity')
 dag0.add_edge('cur_eco_activity', 'economic_status')
@@ -129,41 +167,47 @@ dutch_bn_0.fit(
     equivalent_sample_size=1000,
 )
 
-# forward sample
+## forward sample
 inference = BayesianModelSampling(dutch_bn_0)
 dutch_bn_1_sample_0 = inference.forward_sample(size=60420, include_latents=False, seed=seed_bn)
 
-# Export the data
+## Export the data
 dutch_bn_1_sample_0.to_csv(f'{folder_name}/{log_folder_name}/dutch_initial_graph.csv', index=False)
 
 
 
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Sample 2: No fairness constraints
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Sample 2: No fairness constraints
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 dag2 = BayesianNetwork()
 dag2.add_nodes_from(['sex', 'age', 'household_position', 'household_size','prev_residence_place', 'citizenship'
                     , 'country_birth', 'edu_level','economic_status', 'cur_eco_activity', 'marital_status', 'occupation'])
 
-
-# Add edges
+## Add edges
 dag2.add_edge('sex', 'cur_eco_activity')
 dag2.add_edge('sex', 'occupation')
 dag2.add_edge('sex', 'household_position')
 dag2.add_edge('sex', 'age')
+dag2.add_edge('sex', 'edu_level')
+dag2.add_edge('sex', 'economic_status')
+dag2.add_edge('sex', 'country_birth')
 dag2.add_edge('cur_eco_activity', 'economic_status')
 dag2.add_edge('cur_eco_activity', 'age')
+dag2.add_edge('cur_eco_activity', 'occupation')
 dag2.add_edge('edu_level', 'cur_eco_activity')
 dag2.add_edge('edu_level', 'occupation')
-dag2.add_edge('edu_level', 'sex')
+dag2.add_edge('edu_level', 'age')
+dag2.add_edge('edu_level', 'household_position')
 dag2.add_edge('economic_status', 'occupation')
-dag2.add_edge('economic_status', 'prev_residence_place')
 dag2.add_edge('country_birth', 'citizenship')
 dag2.add_edge('country_birth', 'edu_level')
+dag2.add_edge('country_birth', 'cur_eco_activity')
 dag2.add_edge('age', 'household_position')
 dag2.add_edge('age', 'economic_status')
 dag2.add_edge('age', 'marital_status')
 dag2.add_edge('age', 'household_size')
+dag2.add_edge('age', 'prev_residence_place')
+dag2.add_edge('age', 'citizenship')
 dag2.add_edge('household_position', 'household_size')
 dag2.add_edge('household_position', 'marital_status')
 dag2.add_edge('household_position', 'prev_residence_place')
@@ -176,11 +220,11 @@ dutch_bn_2.fit(
     equivalent_sample_size=1000,
 )
 
-# forward sample
+## forward sample
 inference = BayesianModelSampling(dutch_bn_2)
 dutch_bn_1_sample_2 = inference.forward_sample(size=60420, include_latents=False, seed=seed_bn)
 
-# Export the data
+## Export the data
 dutch_bn_1_sample_2.to_csv(f'{folder_name}/{log_folder_name}/dutch_without_fairness.csv', index=False)
 
 
@@ -189,21 +233,21 @@ dutch_bn_1_sample_2.to_csv(f'{folder_name}/{log_folder_name}/dutch_without_fairn
 **********************************************"""
 for lambda_val in lambda_values:
 
-    # lambda_val = '0.1'
+    # lambda_val = '5.0'
 
-    # Create samples for each lambda value and dag
+    ## Create samples for each lambda value and dag
     d = BayesianNetwork()
     d.add_nodes_from(node_list)
 
-    # Add edges using the log data
+    ## Add edges using the log data
     for edge in log_data[lambda_val]:
-        # Extract the edge
+        ## Extract the edge
         edge = edge.split("(")[1].split(")")[0].split(", ")
-        # Remove the ' from the edge
+        ## Remove the ' from the edge
         edge = [re.sub(r"'", "", e) for e in edge]
         d.add_edge(edge[0], edge[1])
 
-    # Fit the model
+    ## Fit the model
     model_bn = BayesianNetwork(ebunch=d.edges())
     model_bn.fit(
         data=df_bn,
@@ -212,37 +256,37 @@ for lambda_val in lambda_values:
         equivalent_sample_size=1000,
     )
 
-    #------------------------
-    # 1. forward sample and equal size to original data
-    #------------------------
+    ##------------------------
+    ## 1. forward sample and equal size to original data
+    ##------------------------
     inference = BayesianModelSampling(model_bn)
     model_bn_sample_1 = inference.forward_sample(size=original_data_size, include_latents=False, seed=seed_bn)
 
-    # Export the data
+    ## Export the data
     model_bn_sample_1.to_csv(f'{folder_name}/{log_folder_name}/dutch_with_fairness_lambda_{lambda_val}.csv', index=False)
         
 
-    #------------------------
-    # 2. Generate data with larger volume
-    #------------------------
+    ##------------------------
+    ## 2. Generate data with larger volume
+    ##------------------------
     model_bn_sample_2 = inference.forward_sample(size=large_data_size, include_latents=False, seed=seed_bn)
 
-    # Export the data
+    ## Export the data
     model_bn_sample_2.to_csv(f'{folder_name}/{log_folder_name}/{dt_name}_with_fairness_double_size_lambda_{lambda_val}.csv', index=False)
 
-    #------------------------
-    # 3. Generate data with equal outcome class size
-    #------------------------
-    # Use reject sampling to sample equal number of class 1 and class 0
+    ##------------------------
+    ## 3. Generate data with equal outcome class size
+    ##------------------------
+    ## Use reject sampling to sample equal number of class 1 and class 0
     sample_31 = inference.rejection_sample(evidence=[State(var=outcome_name, state=outcome_name_val_1)], size=half_data_size, include_latents=False, seed=seed_bn)
     sample_30 = inference.rejection_sample(evidence=[State(var=outcome_name, state=outcome_name_val_2)], size=half_data_size, include_latents=False, seed=seed_bn)
     model_bn_sample_3 = pd.concat([sample_31, sample_30])
 
     model_bn_sample_3.to_csv(f'{folder_name}/{log_folder_name}/{dt_name}_with_fairness_equal_outcome_lambda_{lambda_val}.csv', index=False)
 
-    #------------------------
-    # 4. Generate equal number of female and male and the total number of samples is 30000
-    #------------------------
+    ##------------------------
+    ## 4. Generate equal number of female and male and the total number of samples is 30000
+    ##------------------------
     sample_41 = inference.rejection_sample(evidence=[State(var=protected_attr, state=protected_attr_val_1)], size=half_data_size, include_latents=False, seed=seed_bn)
     sample_40 = inference.rejection_sample(evidence=[State(var=protected_attr, state=protected_attr_val_2)], size=half_data_size, include_latents=False, seed=seed_bn)
     model_bn_sample_4 = pd.concat([sample_41, sample_40])
@@ -255,13 +299,13 @@ for lambda_val in lambda_values:
 2. Pass this througn ML model
 **********************************************"""
 
-# Import the custom built ml model functions and evaluation metrics
-from run_ml_models import *
+## Import the custom built ml model functions and evaluation metrics
+from ml_model_build_vj import *
 
-#*************************
-# Import data that has been preprocessed, all numerical features are converted to categorical
-#*************************
-# Create an empty dataframe to store all generated datasets
+######################################
+## Import data that has been preprocessed, all numerical features are converted to categorical
+######################################
+## Create an empty dataframe to store all generated datasets
 df_master = pd.DataFrame()
 X_master = pd.DataFrame()
 y_master = pd.DataFrame()
@@ -281,89 +325,101 @@ def add_df_to_master(df_list, model_name, X_train_name, y_train_name, lambda_val
     y_master = pd.concat([y_master, df_list[2]])
     return df_master, X_master, y_master
 
-#---------------- 
-# 0.0 Import original Dutch data
-#----------------
+##---------------- 
+## 0.0 Import original Dutch data
+##----------------
 df00_1, X00, y00 = preprocess_data(df_dutch, cols_ohe, outcome_name)
 
 y00 = y00.to_frame()
-# Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
 df_list = [df00_1, X00, y00]
 df_master, X_master, y_master = add_df_to_master(df_list, 'df00_1','X00','y00', np.NaN,'original dataset')
 
 
-#---------------- 
-# 99.1 Create a new dataset with sex column dropped
-#---------------- 
+
+##---------------- 
+## 99.1 Create a new dataset with sex column dropped
+##---------------- 
 df01 = df_dutch.drop(columns='sex')    
 cols_ohe_1 =  ['age', 'household_position', 'household_size',
              'prev_residence_place', 'citizenship', 'country_birth', 'edu_level',
              'economic_status', 'cur_eco_activity', 'marital_status']
 df01_1, X01, y01 = preprocess_data(df01, cols_ohe_1, outcome_name)
 
-# Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
 y01 = y01.to_frame()
 df_list = [df01_1, X01, y01]
 df_master, X_master, y_master = add_df_to_master(df_list, 'df01_1','X01','y01', np.NaN, 'original dataset with protected attribute removed (FTU)')
 
 
-#---------------- 
-# 99.2 Create a new dataset with sex and marital_status_cat and  relationship_cat columns dropped
-#---------------- 
+##---------------- 
+## 99.2 Create a new dataset with sex and marital_status_cat and  relationship_cat columns dropped
+##---------------- 
 df02 = df_dutch.drop(columns=['sex', 'marital_status', 'household_position']) 
 cols_ohe_2 =  ['age', 'household_size','prev_residence_place', 'citizenship', 
                'country_birth', 'edu_level', 'economic_status', 'cur_eco_activity']
 df02_1, X02, y02 = preprocess_data(df02, cols_ohe_2, outcome_name)
 
-# Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
 y02 = y02.to_frame()
 df_list = [df02_1, X02, y02]
 df_master, X_master, y_master = add_df_to_master(df_list, 'df02_1','X02','y02',np.NaN, 'original dataset with protected attribute and proxies removed (FTU_2)')
 
 
-#---------------- 
-# 1.0 Sampled from initial graph
-#---------------- 
+##---------------- 
+## 1.0 Sampled from initial graph
+##---------------- 
 df0 = pd.read_csv(f'{folder_name}/{log_folder_name}/dutch_initial_graph.csv')
 df0 = dutch_data_preprocess(df0)
 df0_1, X0, y0 = preprocess_data(df0, cols_ohe, outcome_name)
 
-# Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
 y0 = y0.to_frame()
 df_list = [df0_1, X0, y0]
 df_master, X_master, y_master = add_df_to_master(df_list, 'df0_1','X0','y0',np.NaN, 'Initial DAG')
 
-#---------------- 
-# 2. Sampled from graph without fairness constraints
-#---------------- 
+##---------------- 
+## 2. Sampled from graph without fairness constraints
+##---------------- 
 df1 = pd.read_csv(f'{folder_name}/{log_folder_name}/dutch_without_fairness.csv')
 df1 = dutch_data_preprocess(df1)
 df1_1, X1, y1 = preprocess_data(df1, cols_ohe, outcome_name)
 
-# Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
 y1 = y1.to_frame()
 df_list = [df1_1, X1, y1]
 df_master, X_master, y_master = add_df_to_master(df_list, 'df1_1','X1','y1',np.NaN, 'HC without fairness constraints')
 
 
 
-#---------------- 
-# 3. Iterate through different lambda values and append the sampled datasets to the master datasets.
-#---------------- 
+
+##---------------- 
+## 3. Iterate through different lambda values and append the sampled datasets to the master datasets.
+##---------------- 
+# Keep track of lambda values to remove
+lambda_values_to_remove = []
+
 for i, lambda_val in enumerate(lambda_values):
 
     # lambda_val = '0.1'
-    # Find the position number of lambda_val in the list of lambda values
+    ## Find the position number of lambda_val in the list of lambda values
     lambda_pos = lambda_values.index(lambda_val)
 
-    #****************
-    # 3.1 Sampled from graph with fairness constraints
-    #****************
+    ##****************
+    ## 3.1 Sampled from graph with fairness constraints
+    ##****************
     df31 = pd.read_csv(f'{folder_name}/{log_folder_name}/dutch_with_fairness_lambda_{lambda_val}.csv')
     df31 = dutch_data_preprocess(df31)
+
+    # Skip all remaining code in this iteration if preprocessing returned None
+    if df31 is None:
+        print(f"Skipping lambda value {lambda_val}")
+        lambda_values_to_remove.append(lambda_val)
+        continue
+
     df31_1, X31, y31 = preprocess_data(df31, cols_ohe, outcome_name)
 
-    # Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+    ## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
     y31 = y31.to_frame()
     df_list = [df31_1, X31, y31]
     model_name = 'df31_1'+'_'+str(i)
@@ -371,14 +427,20 @@ for i, lambda_val in enumerate(lambda_values):
     y_train_name = 'y31'+'_'+str(i)
     df_master, X_master, y_master = add_df_to_master(df_list, model_name,X_train_name,y_train_name,lambda_val, f'HC with fairness constraints and same size as original dataset lambda = {lambda_val}')
 
-    #****************
-    # 3.2 Sampeled from graph with fairness constraints and double the size of original dataset
-    #****************
+    ##****************
+    ## 3.2 Sampeled from graph with fairness constraints and double the size of original dataset
+    ##****************
     df32 = pd.read_csv(f'{folder_name}/{log_folder_name}/{dt_name}_with_fairness_double_size_lambda_{lambda_val}.csv')
     df32 = dutch_data_preprocess(df32)
+
+    # Skip all remaining code in this iteration if preprocessing returned None
+    if df32 is None:
+        print(f"Skipping lambda value {lambda_val}")
+        continue
+
     df32_1, X32, y32 = preprocess_data(df32, cols_ohe, outcome_name)
 
-    # Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+    ## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
     y32 = y32.to_frame()
     df_list = [df32_1, X32, y32]
     model_name = 'df32_1'+'_'+str(i)
@@ -386,14 +448,20 @@ for i, lambda_val in enumerate(lambda_values):
     y_train_name = 'y32'+'_'+str(i)
     df_master, X_master, y_master = add_df_to_master(df_list, model_name,X_train_name,y_train_name,lambda_val, f'HC with fairness constraints and double the size of original dataset lambda = {lambda_val}')
 
-    #****************
-    # 3.3 Sampeled from graph with fairness constraints and equal number of class 1 and class 0
-    #****************
+    ##****************
+    ## 3.3 Sampeled from graph with fairness constraints and equal number of class 1 and class 0
+    ##****************
     df33 = pd.read_csv(f'{folder_name}/{log_folder_name}/{dt_name}_with_fairness_equal_outcome_lambda_{lambda_val}.csv')
     df33 = dutch_data_preprocess(df33)
+
+    # Skip all remaining code in this iteration if preprocessing returned None
+    if df33 is None:
+        print(f"Skipping lambda value {lambda_val}")
+        continue
+
     df33_1, X33, y33 = preprocess_data(df33, cols_ohe, outcome_name)
 
-    # Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+    ## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
     y33 = y33.to_frame()
     df_list = [df33_1, X33, y33]
     model_name = 'df33_1'+'_'+str(i)
@@ -401,14 +469,20 @@ for i, lambda_val in enumerate(lambda_values):
     y_train_name = 'y33'+'_'+str(i)
     df_master, X_master, y_master = add_df_to_master(df_list, model_name,X_train_name,y_train_name, lambda_val, f'HC with fairness constraints and equal number of class 1 and class 0 lambda = {lambda_val}')
 
-    #****************
-    # 3.4 Sampeled from graph with fairness constraints and equal number of male and female
-    #****************
+    ##****************
+    ## 3.4 Sampeled from graph with fairness constraints and equal number of male and female
+    ##****************
     df34 = pd.read_csv(f'{folder_name}/{log_folder_name}/{dt_name}_with_fairness_equal_protected_attr_lambda_{lambda_val}.csv')
     df34 = dutch_data_preprocess(df34)
+
+    # Skip all remaining code in this iteration if preprocessing returned None
+    if df34 is None:
+        print(f"Skipping lambda value {lambda_val}")
+        continue
+
     df34_1, X34, y34 = preprocess_data(df34, cols_ohe, outcome_name)
     
-    # Add values to indicate which dataset it is to df00_1, X00, y00 all at once
+    ## Add values to indicate which dataset it is to df00_1, X00, y00 all at once
     y34 = y34.to_frame()
     df_list = [df34_1, X34, y34]
     model_name = 'df34_1'+'_'+str(i)
@@ -417,42 +491,55 @@ for i, lambda_val in enumerate(lambda_values):
     df_master, X_master, y_master = add_df_to_master(df_list, model_name,X_train_name,y_train_name,lambda_val,  f'HC with fairness constraints and equal number of protected attribute lambda = {lambda_val}')
 
 
+# Remove the skipped lambda values from the list
+for lambda_val in lambda_values_to_remove:
+    lambda_values.remove(lambda_val)
+
 df_master.model_name.unique()
 df_master.sample_name.unique()
 
-# *************************
-# Build models and evaluate fairness
-# *************************
+######################################
+## Build models and evaluate fairness
+######################################
 
-#-----------------------------------
-# Run~
-#-----------------------------------
+##-----------------------------------
+## Run~
+##-----------------------------------
 df_model_names = df_master['model_name'].unique().tolist()
 sample_names = df_master['sample_name'].unique().tolist()
 
 X_train_names = df_master['X_train_name'].unique().tolist()
 y_train_names = df_master['y_train_name'].unique().tolist()
 
-# Define the datasets used for model testing. 
-# If testing data is the same as training data, then leave it as None.
+## Define the datasets used for model testing. If testing data is the same as training data, then leave it as None.
 X_test_names = df_master['X_train_name'].unique().tolist()
 y_test_names = df_master['y_train_name'].unique().tolist()
 
+## Edit the last three elements of X_test_names and y_test_names
+## These are the datasets that have been over-sampled, we use the original dataset for testing.
+# X_test_names = [x if x in ['X00','X01', 'X02', 'X0', 'X1'] or x.startswith('X31_') else 'X00' for x in X_test_names]
+# y_test_names = [x if x in ['y00','y01','y02', 'y0', 'y1'] or x.startswith('y31_') else 'y00' for x in y_test_names]
 
-# Test on the original data for original and FTU datasets.
-# Test on the sythentic data for all generated datasets.
-X_test_names = [x if x in ['X00','X01', 'X02', 'X0', 'X1'] else 'X00' for x in X_test_names]
-y_test_names = [x if x in ['y00','y01','y02', 'y0', 'y1'] else 'y00' for x in y_test_names]
+# X_test_names = [x if x in ['X00','X01', 'X02', 'X0', 'X1'] else 'X00' for x in X_test_names]
+# y_test_names = [x if x in ['y00','y01','y02', 'y0', 'y1'] else 'y00' for x in y_test_names]
 
 
-# sf_indata: first constract a list of 'Y's the same size as df_model_names, then the second and third elements are 'N's
-# This is to indicate if the dataset has the sensitive attribute in the input data. If not, the code has to grab the sensitive attribute from the original dataset.
+## sf_indata: first constract a list of 'Y's the same size as df_model_names, then the second and third elements are 'N's
+## This is to indicate if the dataset has the sensitive attribute in the input data. If not, the code has to grab the sensitive attribute from the original dataset.
 sf_indata = ['Y'] * len(df_model_names)
 sf_indata[1] = 'N'
 sf_indata[2] = 'N'
 
+# df_model_names = [df_model_names[6]]
+# sample_names = [sample_names[6]]
+# X_train_names = [X_train_names[6]]
+# y_train_names = [y_train_names[6]]
+# X_test_names = [X_test_names[6]]
+# y_test_names = [y_test_names[6]]
+# sf_indata = [sf_indata[6]]
 
-# Create an empty dataframe to store the results
+
+## Create an empty dataframe to store the results
 m_results_f = pd.DataFrame()
 
 for i, df_name in enumerate(df_model_names):
@@ -463,34 +550,34 @@ for i, df_name in enumerate(df_model_names):
     X_te = X_master[X_master['X_train_name'] == X_test_names[i]]
     y_te = y_master[y_master['y_train_name'] == y_test_names[i]]
 
-    # Drop the last five columns
+    ## Drop the last five columns
     cols_to_drop = ['lambda', 'model_name', 'sample_name', 'X_train_name', 'y_train_name']
     df_model = df_model.drop(columns=cols_to_drop)
     X_tr = X_tr.drop(columns=cols_to_drop)
     X_te = X_te.drop(columns=cols_to_drop)
 
-    # Convert the y_tr and y_te to series
+    ## Convert the y_tr and y_te to series
     y_tr = y_tr.iloc[:,0]
     y_te = y_te.iloc[:,0]
 
-    # Remove columns in the training and test data that only contain NaN values
+    ## Remove columns in the training and test data that only contain NaN values
     X_tr = X_tr.dropna(axis=1, how='all')
     X_te = X_te.dropna(axis=1, how='all')
 
-    # Drop the columns that had been one-hot-encoded if it is in the dataset
+    ## Drop the columns that had been one-hot-encoded if it is in the dataset
     df_model = df_model.drop(columns=[col for col in cols_ohe if col in df_model.columns])
     X_tr = X_tr.drop(columns=[col for col in cols_ohe if col in X_tr.columns])
     X_te = X_te.drop(columns=[col for col in cols_ohe if col in X_te.columns])
 
-    # If the test data contains different columns than the training data, then drop the columns and the rows that are not in the test data.
+    ## If the test data contains different columns than the training data, then drop the columns and the rows that are not in the test data.
     extra_columns = set(X_te.columns) - set(X_tr.columns)
     rows_to_remove = X_te[list(extra_columns)].any(axis=1)
     X_te = X_te.drop(columns=extra_columns)
     X_te = X_te[~rows_to_remove]
     y_te = y_te[~rows_to_remove]
 
-    # Drop columns that have NaN values. This should only impact FTU datasets where the protected attribute has been removed.
-    # This is to avoid error when building the model.
+    ## Drop columns that have NaN values. This should only impact FTU datasets where the protected attribute has been removed.
+    ## This is to avoid error when building the model.
     df_model = df_model.dropna(axis=1, how='any')
     nan_rows = X_tr.isnull().any(axis=1)
     X_tr = X_tr[~nan_rows]
@@ -515,5 +602,5 @@ for i, df_name in enumerate(df_model_names):
 
     m_results_f = pd.concat([m_results_f, result])
 
-m_results_f.to_csv(f'{folder_name}/{log_folder_name}/{dt_name}_model_fairness_results.csv', index=False)
+m_results_f.to_csv(f'{folder_name}/{log_folder_name}/{dt_name}_model_fairness_results_validated_with_sythentic_data_20241108.csv', index=False)
 

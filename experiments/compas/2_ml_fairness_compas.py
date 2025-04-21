@@ -9,30 +9,45 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_colwidth', None)
 
+
 ## Set seeds
 seed_bn = 123
 seed_ml = 123
 
-df_compas = pd.read_csv(f'data/data_compas/compas_final.csv')
+
+## *******************
+## Test Compas data
+## *******************
+df_compas = pd.read_csv(f'data_compas/compas_final.csv')
 
 print(df_compas.shape)
 # (6172, 23)
+
+df_compas.dtypes
+
+df_compas.race_cat.value_counts()
+# non_white    4069
+# white        2103
+
+df_compas.two_year_recid.value_counts()
+# 0    3766
+# 1    2406
 
 node_list = df_compas.columns.tolist()
 
 """ **********************************************
 4. Parameter Learning
 **********************************************"""
-from FairnessAwareHC.models import BayesianNetwork
-from FairnessAwareHC.estimators import MaximumLikelihoodEstimator, BayesianEstimator
-from FairnessAwareHC.factors.discrete import State
-from FairnessAwareHC.sampling import BayesianModelSampling
+from pgmpyVJ.models import BayesianNetwork
+from pgmpyVJ.estimators import MaximumLikelihoodEstimator, BayesianEstimator
+from pgmpy.factors.discrete import State
+from pgmpyVJ.sampling import BayesianModelSampling
 
 
 ## Set parameters
 df_bn = df_compas.copy()
 
-folder_name = 'experiments/compas'
+folder_name = 'data_compas'
 dt_name = "compas"
 outcome_name = 'two_year_recid'
 outcome_name_val_1 = 0
@@ -54,7 +69,7 @@ half_data_size = original_data_size // 2
 
 
 ## Specify the folder name where the logs are saved.
-log_folder_name = 'outputs'
+log_folder_name = 'log_aic_eo_20241009'
 
 ## Import all the logs in the folder, including the file name, where the last component indicates the lambda value.
 ## Get all the log files
@@ -129,20 +144,32 @@ dag1.add_nodes_from(['sex', 'age_cat', 'c_charge_degree', 'two_year_recid', 'rac
                     'priors_count_cat', 'days_b_screening_arrest_cat', 'c_days_from_compas_cat'])
 
 ## Add edges
+dag1.add_edge('race_cat', 'sex')
+dag1.add_edge('race_cat', 'c_charge_degree')
+dag1.add_edge('race_cat', 'juv_fel_count_cat')
+dag1.add_edge('race_cat', 'juv_misd_count_cat')
 dag1.add_edge('race_cat', 'age_cat')
+dag1.add_edge('race_cat', 'c_days_from_compas_cat')
 dag1.add_edge('race_cat', 'priors_count_cat')
-dag1.add_edge('age_cat', 'priors_count_cat')
-dag1.add_edge('age_cat', 'juv_other_count_cat')
 dag1.add_edge('age_cat', 'two_year_recid')
-dag1.add_edge('age_cat', 'juv_misd_count_cat')
+dag1.add_edge('age_cat', 'c_days_from_compas_cat')
+dag1.add_edge('age_cat', 'juv_other_count_cat')
+dag1.add_edge('age_cat', 'priors_count_cat')
 dag1.add_edge('priors_count_cat', 'two_year_recid')
-dag1.add_edge('priors_count_cat', 'c_days_from_compas_cat')
-dag1.add_edge('priors_count_cat', 'juv_misd_count_cat')
-dag1.add_edge('priors_count_cat', 'juv_fel_count_cat')
-dag1.add_edge('priors_count_cat', 'c_charge_degree')
+dag1.add_edge('priors_count_cat', 'juv_other_count_cat')
 dag1.add_edge('priors_count_cat', 'sex')
+dag1.add_edge('juv_other_count_cat', 'juv_fel_count_cat')
+dag1.add_edge('two_year_recid', 'days_b_screening_arrest_cat')
+dag1.add_edge('two_year_recid', 'c_charge_degree')
+dag1.add_edge('two_year_recid', 'juv_fel_count_cat')
+dag1.add_edge('two_year_recid', 'sex')
 dag1.add_edge('c_days_from_compas_cat', 'days_b_screening_arrest_cat')
-dag1.add_edge('juv_misd_count_cat', 'juv_other_count_cat')
+dag1.add_edge('c_days_from_compas_cat', 'c_charge_degree')
+dag1.add_edge('juv_misd_count_cat', 'age_cat')
+dag1.add_edge('juv_misd_count_cat', 'priors_count_cat')
+dag1.add_edge('sex', 'c_days_from_compas_cat')
+dag1.add_edge('sex', 'juv_fel_count_cat')
+dag1.add_edge('sex', 'c_charge_degree')
 
 
 compas_bn_1 = BayesianNetwork(ebunch=dag1.edges())
@@ -233,7 +260,7 @@ for lambda_val in lambda_values:
 ##---------------------------
 
 ## Import the custom built ml model functions and evaluation metrics
-from run_ml_models import *
+from ml_model_build_vj import *
 
 
 ## Make sure all columns except the outcome column are set as object type, not floats, even when it contains numerical values.
@@ -440,15 +467,27 @@ y_train_names = df_master['y_train_name'].unique().tolist()
 X_test_names = df_master['X_train_name'].unique().tolist()
 y_test_names = df_master['y_train_name'].unique().tolist()
 
+## Edit the last three elements of X_test_names and y_test_names
+## These are the datasets that have been over-sampled, we use the original dataset for testing.
+# X_test_names = [x if x in ['X00','X01', 'X02', 'X0', 'X1'] or x.startswith('X31_') else 'X00' for x in X_test_names]
+# y_test_names = [x if x in ['y00','y01','y02', 'y0', 'y1'] or x.startswith('y31_') else 'y00' for x in y_test_names]
 
-X_test_names = [x if x in ['X00','X01', 'X02', 'X0', 'X1'] else 'X00' for x in X_test_names]
-y_test_names = [x if x in ['y00','y01','y02', 'y0', 'y1'] else 'y00' for x in y_test_names]
+# X_test_names = [x if x in ['X00','X01', 'X02', 'X0', 'X1'] else 'X00' for x in X_test_names]
+# y_test_names = [x if x in ['y00','y01','y02', 'y0', 'y1'] else 'y00' for x in y_test_names]
 
 ## sf_indata: first constract a list of 'Y's the same size as df_model_names, then the second and third elements are 'N's
 ## This is to indicate if the dataset has the sensitive attribute in the input data. If not, the code has to grab the sensitive attribute from the original dataset.
 sf_indata = ['Y'] * len(df_model_names)
 sf_indata[1] = 'N'
 sf_indata[2] = 'N'
+
+# df_model_names = [df_model_names[6]]
+# sample_names = [sample_names[6]]
+# X_train_names = [X_train_names[6]]
+# y_train_names = [y_train_names[6]]
+# X_test_names = [X_test_names[6]]
+# y_test_names = [y_test_names[6]]
+# sf_indata = [sf_indata[6]]
 
 
 ## Create an empty dataframe to store the results
@@ -514,4 +553,5 @@ for i, df_name in enumerate(df_model_names):
 
     m_results_f = pd.concat([m_results_f, result])
 
-m_results_f.to_csv(f'{folder_name}/{log_folder_name}/{dt_name}_model_fairness_results.csv', index=False)
+m_results_f.to_csv(f'{folder_name}/{log_folder_name}/{dt_name}_model_fairness_results_validated_with_sythentic_data_20241011.csv', index=False)
+

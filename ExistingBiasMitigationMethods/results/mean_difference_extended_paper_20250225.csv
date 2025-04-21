@@ -1,0 +1,85 @@
+dataset,parameters,data_type,mean_difference
+dutch_census,BIC-DPD,original data,0.2985
+dutch_census,BIC-DPD,generated data without fairness,0.2901
+dutch_census,BIC-DPD,generated data with fairness,0.0039
+dutch_census,BIC-DPD,generated data with fairness and double size,0.0043
+dutch_census,BIC-DPD,generated data with fairness and euqale size outcome,0.0015
+dutch_census,BIC-DPD,generated data with fairness and euqale size protected attribute,0.0011
+dutch_census,BIC-EO,generated data without fairness,0.2901
+dutch_census,BIC-EO,generated data with fairness,0.0046
+dutch_census,BIC-EO,generated data with fairness and double size,0.0086
+dutch_census,BIC-EO,generated data with fairness and euqale size outcome,0.0064
+dutch_census,BIC-EO,generated data with fairness and euqale size protected attribute,0.0094
+dutch_census,AIC-DPD,generated data without fairness,0.2889
+dutch_census,AIC-DPD,generated data with fairness,0.0036
+dutch_census,AIC-DPD,generated data with fairness and double size,0.0028
+dutch_census,AIC-DPD,generated data with fairness and euqale size outcome,0.0019
+dutch_census,AIC-DPD,generated data with fairness and euqale size protected attribute,0.0031
+dutch_census,AIC-EO,generated data without fairness,0.2889
+dutch_census,AIC-EO,generated data with fairness,0.0095
+dutch_census,AIC-EO,generated data with fairness and double size,0.0109
+dutch_census,AIC-EO,generated data with fairness and euqale size outcome,0.0142
+dutch_census,AIC-EO,generated data with fairness and euqale size protected attribute,0.0166
+adult_census,BIC-DPD,original data,0.1963
+adult_census,BIC-DPD,generated data without fairness,0.1702
+adult_census,BIC-DPD,generated data with fairness,0.0431
+adult_census,BIC-DPD,generated data with fairness and double size,0.0256
+adult_census,BIC-DPD,generated data with fairness and euqale size outcome,0.0349
+adult_census,BIC-DPD,generated data with fairness and euqale size protected attribute,0.0299
+adult_census,BIC-EO,generated data without fairness,0.1702
+adult_census,BIC-EO,generated data with fairness,0.0113
+adult_census,BIC-EO,generated data with fairness and double size,0.0012
+adult_census,BIC-EO,generated data with fairness and euqale size outcome,0.0062
+adult_census,BIC-EO,generated data with fairness and euqale size protected attribute,0.0002
+adult_census,AIC-DPD,generated data without fairness,0.1835
+adult_census,AIC-DPD,generated data with fairness,0.0127
+adult_census,AIC-DPD,generated data with fairness and double size,0.0104
+adult_census,AIC-DPD,generated data with fairness and euqale size outcome,0.0076
+adult_census,AIC-DPD,generated data with fairness and euqale size protected attribute,0.0079
+adult_census,AIC-EO,generated data without fairness,0.1835
+adult_census,AIC-EO,generated data with fairness,0.0154
+adult_census,AIC-EO,generated data with fairness and double size,0.0254
+adult_census,AIC-EO,generated data with fairness and euqale size outcome,0.0297
+adult_census,AIC-EO,generated data with fairness and euqale size protected attribute,0.0211
+compas,BIC-DPD,original data,0.0975
+compas,BIC-DPD,generated data without fairness,0.0505
+compas,BIC-DPD,generated data with fairness,0.0011
+compas,BIC-DPD,generated data with fairness and double size,0.022
+compas,BIC-DPD,generated data with fairness and euqale size outcome,0.0251
+compas,BIC-DPD,generated data with fairness and euqale size protected attribute,0.0221
+compas,BIC-EO,generated data without fairness,0.0505
+compas,BIC-EO,generated data with fairness,0.0108
+compas,BIC-EO,generated data with fairness and double size,0.003
+compas,BIC-EO,generated data with fairness and euqale size outcome,0.021
+compas,BIC-EO,generated data with fairness and euqale size protected attribute,0.0127
+compas,AIC-DPD,generated data without fairness,0.0565
+compas,AIC-DPD,generated data with fairness,0.0063
+compas,AIC-DPD,generated data with fairness and double size,0.0052
+compas,AIC-DPD,generated data with fairness and euqale size outcome,0.0091
+compas,AIC-DPD,generated data with fairness and euqale size protected attribute,0.0007
+compas,AIC-EO,generated data without fairness,0.0565
+compas,AIC-EO,generated data with fairness,0.0163
+compas,AIC-EO,generated data with fairness and double size,0.0037
+compas,AIC-EO,generated data with fairness and euqale size outcome,0.0021
+compas,AIC-EO,generated data with fairness and euqale size protected attribute,0.0072
+law_school,BIC-DPD,original data,0.0566
+law_school,BIC-DPD,generated data without fairness,0.0265
+law_school,BIC-DPD,generated data with fairness,0.0022
+law_school,BIC-DPD,generated data with fairness and double size,0.0053
+law_school,BIC-DPD,generated data with fairness and euqale size outcome,0.006
+law_school,BIC-DPD,generated data with fairness and euqale size protected attribute,0.0022
+law_school,BIC-EO,generated data without fairness,0.0265
+law_school,BIC-EO,generated data with fairness,0.0122
+law_school,BIC-EO,generated data with fairness and double size,0.0067
+law_school,BIC-EO,generated data with fairness and euqale size outcome,0.0195
+law_school,BIC-EO,generated data with fairness and euqale size protected attribute,0.005
+law_school,AIC-DPD,generated data without fairness,0.01
+law_school,AIC-DPD,generated data with fairness,0.0146
+law_school,AIC-DPD,generated data with fairness and double size,0.0131
+law_school,AIC-DPD,generated data with fairness and euqale size outcome,0.0419
+law_school,AIC-DPD,generated data with fairness and euqale size protected attribute,0.0238
+law_school,AIC-EO,generated data without fairness,0.01
+law_school,AIC-EO,generated data with fairness,0.0058
+law_school,AIC-EO,generated data with fairness and double size,0.0003
+law_school,AIC-EO,generated data with fairness and euqale size outcome,0.0191
+law_school,AIC-EO,generated data with fairness and euqale size protected attribute,0.0089
